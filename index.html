@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arav Mendiratta | AI & Distributed Data Systems Engineer</title>
+  <meta name="description" content="Portfolio of Arav Mendiratta - M.Sc. Computer Science Student at University of Freiburg specializing in Machine Learning, Distributed Streaming Systems, and Computational Biology.">
+  <meta name="keywords" content="Arav Mendiratta, AI Engineer, Machine Learning, Deep Learning, PyTorch, Kafka, PySpark, Databricks, Bioinformatics, Freiburg">
+  <meta name="author" content="Arav Mendiratta">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Arav Mendiratta | Portfolio">
+  <meta property="og:description" content="AI, Machine Learning & Distributed Streaming Systems Engineer. M.Sc. Computer Science at University of Freiburg.">
+  <meta property="og:image" content="assets/avatar.jpg">
+  
+  <!-- Google Fonts: Outfit & Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/jpeg" href="assets/avatar.jpg">
+</head>
+<body>
+  <!-- Ambient background glow & canvas -->
+  <canvas id="ambient-canvas"></canvas>
+  <div class="glow-orb glow-orb-1"></div>
+  <div class="glow-orb glow-orb-2"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper" id="navbar">
+    <nav class="navbar container">
+      <a href="#hero" class="nav-brand" id="brand-link">
+        <span class="brand-avatar-mini">
+          <img src="assets/avatar.jpg" alt="Arav Mendiratta Emblem" />
+        </span>
+        <span class="brand-text">Arav<span class="accent-dot">.</span>ai</span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link" id="nav-link-about">About</a>
+        <a href="#projects" class="nav-link" id="nav-link-projects">Projects</a>
+        <a href="#research" class="nav-link" id="nav-link-research">Research</a>
+        <a href="#experience" class="nav-link" id="nav-link-experience">Experience</a>
+        <a href="#skills" class="nav-link" id="nav-link-skills">Skills</a>
+        <a href="#terminal-section" class="nav-link" id="nav-link-terminal"><i class="fa-solid fa-terminal"></i> CLI</a>
+        <a href="#contact" class="nav-link" id="nav-link-contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light and dark theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <a href="assets/Arav_Mendiratta_Resume.pdf" class="btn btn-outline btn-sm nav-cv-btn" id="nav-resume-btn" target="_blank" download>
+          <i class="fa-solid fa-file-arrow-down"></i> <span>Resume</span>
+        </a>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Open mobile menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-indicator"></span>
+            <span>M.Sc. Computer Science @ University of Freiburg</span>
+          </div>
+
+          <h1 class="hero-title">
+            Engineering High-Throughput <span class="gradient-text">AI Models & Streaming Systems</span>
+          </h1>
+
+          <p class="hero-lead">
+            Hi, I'm <strong>Arav Mendiratta</strong>. I specialize in building reliable, fault-tolerant 
+            distributed data architectures, foundation ML models, and computational biology pipelines. 
+            Passionate about engineering systems that convert raw, complex datasets into high-impact intelligence.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+              <i class="fa-solid fa-microchip"></i> Explore Projects
+            </a>
+            <a href="https://github.com/aravmendiratta" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="hero-cta-github">
+              <i class="fa-brands fa-github"></i> GitHub Profile
+            </a>
+            <a href="#terminal-section" class="btn btn-ghost" id="hero-cta-cli">
+              <i class="fa-solid fa-terminal"></i> Launch CLI
+            </a>
+          </div>
+
+          <div class="hero-social-links">
+            <a href="mailto:arav.mendiratta1@gmail.com" title="Email Arav" class="social-icon" id="hero-email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/aravmendiratta/" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile" class="social-icon" id="hero-linkedin">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/aravmendiratta" target="_blank" rel="noopener noreferrer" title="GitHub Profile" class="social-icon" id="hero-github">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <span class="location-pill">
+              <i class="fa-solid fa-location-dot"></i> Düsseldorf & Freiburg, Germany
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-card-wrapper">
+            <div class="visual-card-glow"></div>
+            <div class="visual-card">
+              <div class="visual-card-header">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+                <span class="window-title">system_state.py</span>
+              </div>
+              <div class="visual-card-body">
+                <div class="avatar-ring">
+                  <img src="assets/avatar.jpg" alt="Arav Mendiratta" class="hero-avatar" />
+                </div>
+                <div class="code-snippet">
+                  <span class="code-comment"># Live Engineering Telemetry</span>
+                  <p><span class="code-keyword">profile</span> = {</p>
+                  <p class="indent-1"><span class="code-string">"role"</span>: <span class="code-val">"AI & Distributed Systems"</span>,</p>
+                  <p class="indent-1"><span class="code-string">"thesis_focus"</span>: <span class="code-val">"Seeking Collaboration"</span>,</p>
+                  <p class="indent-1"><span class="code-string">"status"</span>: <span class="code-val">"Open to Opportunities"</span>,</p>
+                  <p class="indent-1"><span class="code-string">"languages"</span>: [<span class="code-val">"Python"</span>, <span class="code-val">"SQL"</span>, <span class="code-val">"TypeScript"</span>],</p>
+                  <p class="indent-1"><span class="code-string">"stack"</span>: [<span class="code-val">"PyTorch"</span>, <span class="code-val">"Kafka"</span>, <span class="code-val">"PySpark"</span>]</p>
+                  <p>}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="container metrics-container">
+        <div class="metric-card">
+          <div class="metric-icon"><i class="fa-solid fa-bolt"></i></div>
+          <div class="metric-number" data-target="25000" data-suffix="+ msg/s">25,000+</div>
+          <div class="metric-label">Streaming Event Throughput</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon"><i class="fa-solid fa-database"></i></div>
+          <div class="metric-number" data-target="10" data-suffix="M+ records">10M+</div>
+          <div class="metric-label">Processed in PySpark Pipeline</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon"><i class="fa-solid fa-dna"></i></div>
+          <div class="metric-number" data-target="35" data-suffix="% boost">35%</div>
+          <div class="metric-label">scRNA-seq Classification Boost</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="metric-number" data-target="97" data-suffix="%+ acc">97%+</div>
+          <div class="metric-label">Published Model Accuracy</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Background & Vision</span>
+          <h2 class="section-title">Bridging Theory, Systems, and Impact</h2>
+          <p class="section-subtitle">
+            Combining machine learning rigor with scalable software engineering to deliver reproducible solutions.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel">
+            <div class="about-card-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>Deep Learning & AI</h3>
+            <p>
+              Specializing in Transformers, Graph Neural Networks (E(3) Equivariant architectures), 
+              Computer Vision (Meta DINOv2/V-JEPA), and Retrieval-Augmented Generation (RAG) 
+              with verifiable citation tracing and low-latency streaming backends.
+            </p>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="about-card-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h3>Distributed Data Engineering</h3>
+            <p>
+              Architecting production pipelines with PySpark on Databricks, Apache Kafka / Redpanda, 
+              Delta Lake, and PostgreSQL. Focused on deterministic simulation, five-dimension data quality 
+              verification, and microsecond order book reconstructions.
+            </p>
+          </div>
+
+          <div class="about-card glass-panel">
+            <div class="about-card-icon"><i class="fa-solid fa-flask-vial"></i></div>
+            <h3>Computational Life Sciences</h3>
+            <p>
+              Pioneering machine learning applied to high-dimensional biological data — from 
+              Cell-to-Sentence representations across 10,000+ gene count matrices at CRC 1597 Small Data 
+              to 3D protein-ligand binding affinity prediction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Engineering Projects & Systems</h2>
+          <p class="section-subtitle">
+            Explore hands-on distributed streaming engines, deep learning architectures, and production platforms.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-controls" id="filter-controls">
+          <button class="filter-btn active" data-filter="all">All Projects <span class="filter-count">(7)</span></button>
+          <button class="filter-btn" data-filter="systems">Data Systems & Streaming <span class="filter-count">(2)</span></button>
+          <button class="filter-btn" data-filter="aiml">AI & Deep Learning <span class="filter-count">(3)</span></button>
+          <button class="filter-btn" data-filter="bioinfo">Bioinformatics & Vision <span class="filter-count">(2)</span></button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project items populated via JavaScript / static fallback -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Research & Seminars Section -->
+    <section class="section research-section" id="research">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Rigor</span>
+          <h2 class="section-title">Research, Seminars & Presentations</h2>
+          <p class="section-subtitle">
+            Presentations, seminar deep-dives, and peer-reviewed publications at Albert-Ludwigs-Universität Freiburg.
+          </p>
+        </div>
+
+        <div class="research-grid">
+          <!-- Research 1 -->
+          <div class="research-card glass-panel">
+            <div class="research-badge">Seminar Presentation • Feb 2026</div>
+            <h3 class="research-title">Grad-CAMO: Interpretable Morphological Profiles from 3D Cell Painting</h3>
+            <p class="research-meta"><i class="fa-solid fa-graduation-cap"></i> Master Seminar: Trustworthy AI | Uni Freiburg</p>
+            <p class="research-desc">
+              Investigated Gopalakrishnan et al. (CVPR Workshop 2024), analyzing how supervised deep learning 
+              models in image-based drug discovery can erroneously exploit biologically irrelevant background artifacts. 
+              Evaluated Grad-CAM Overlap (Grad-CAMO) to audit attention fidelity on true single-cell regions.
+            </p>
+            <div class="research-tags">
+              <span>Interpretability</span>
+              <span>Cell Painting</span>
+              <span>Drug Discovery</span>
+              <span>Grad-CAM</span>
+            </div>
+          </div>
+
+          <!-- Research 2 -->
+          <div class="research-card glass-panel">
+            <div class="research-badge highlight">Full Reproduction • Aug 2026</div>
+            <h3 class="research-title">SSSL-HAR: Synthetic Self-Supervised Learning for Wearable Activity Recognition</h3>
+            <p class="research-meta"><i class="fa-solid fa-graduation-cap"></i> Master Seminar: Intelligent Embedded Systems | Uni Freiburg</p>
+            <p class="research-desc">
+              Beyond analyzing Li et al. (IJCB 2025), built an independent, full engineering reproduction of the 
+              physics-based IMU simulation engine and Multi-View Contrastive Learning architecture from scratch, 
+              achieving <strong>88.15% zero-shot accuracy</strong> on the PAMAP2 benchmark.
+            </p>
+            <div class="research-tags">
+              <span>Self-Supervised</span>
+              <span>Wearable Computing</span>
+              <span>Contrastive Learning</span>
+              <span>88.15% Zero-Shot</span>
+            </div>
+          </div>
+
+          <!-- Research 3 -->
+          <div class="research-card glass-panel">
+            <div class="research-badge published">Peer-Reviewed Publication • 2024</div>
+            <h3 class="research-title">Tomato Crop Pathology Assessment Using Hybrid Computer Vision</h3>
+            <p class="research-meta"><i class="fa-solid fa-book-journal-whills"></i> Published at ICRCET-2024</p>
+            <p class="research-desc">
+              Designed a hybrid CNN inference pipeline classifying 10 disease categories across 16,011 images 
+              with <strong>97%+ accuracy</strong>. Integrated automated pathogen detection, healthy vs. diseased 
+              segmentation, and severity grading as a template for automated imaging diagnostics.
+            </p>
+            <div class="research-tags">
+              <span>Published Paper</span>
+              <span>Hybrid CNN</span>
+              <span>Computer Vision</span>
+              <span>OpenCV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career History</span>
+          <h2 class="section-title">Industry & Academic Experience</h2>
+          <p class="section-subtitle">
+            Proven track record in research institutes, tier-one enterprise consulting, and top university coursework.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: CRC 1597 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"><i class="fa-solid fa-dna"></i></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Student Researcher</h3>
+                  <div class="company-name">Collaborative Research Center 1597 Small Data</div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-badge">Freiburg, Germany</span>
+                  <span class="timeline-date">May 2026 – July 2026</span>
+                </div>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Independently engineered an end-to-end, LLM-powered pipeline to analyze medical data, converting high-dimensional scRNA-seq data into ordinal embeddings and <strong>improving rare cell-type classification accuracy by 35%</strong>.</li>
+                <li>Architected a Python pipeline to format <strong>over 10,000 gene count matrices</strong> as "cell sentences" (Cell2Sentence), mapping complex biological relationships <strong>3x faster</strong>.</li>
+                <li>Designed an interactive prompt-prototyping framework to systematically evaluate few-shot prompts, <strong>reducing batch deployment error rates by 20%</strong>.</li>
+                <li>Established MLOps and CI/CD workflows using GitHub Actions, <strong>decreasing model iteration deployment time by 40%</strong> and guaranteeing reproducible analysis environments.</li>
+              </ul>
+              <div class="experience-tech-tags">
+                <span>PyTorch</span><span>scRNA-seq</span><span>Scanpy</span><span>Hugging Face</span><span>GitHub Actions</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Capgemini -->
+          <div class="timeline-item">
+            <div class="timeline-marker"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Data Scientist (Working Student)</h3>
+                  <div class="company-name">Capgemini Germany</div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-badge">Stuttgart, Germany</span>
+                  <span class="timeline-date">June 2025 – Dec 2025</span>
+                </div>
+              </div>
+
+              <div class="sub-experience">
+                <h4><i class="fa-solid fa-car"></i> AUDI Generative AI Tool</h4>
+                <ul class="timeline-bullets">
+                  <li>Developed a Generative AI image creation platform, <strong>shortening the prototyping cycle for the AUDI design team by weeks</strong> through automated visual concept generation.</li>
+                  <li>Architected generative workflows using AWS CDK and Docker, achieving a proven <strong>40% efficiency boost</strong> in image generation throughput.</li>
+                  <li>Engineered highly available FastAPI microservices handling thousands of daily API requests with <strong>>95% test coverage</strong> (Pytest).</li>
+                </ul>
+              </div>
+
+              <div class="sub-experience">
+                <h4><i class="fa-solid fa-chart-line"></i> Internal I&D Portfolio Development</h4>
+                <ul class="timeline-bullets">
+                  <li>Structured a <strong>multi-million Euro I&D portfolio</strong>, accelerating the delivery of new client-facing offerings for Go-To-Market strategies by <strong>25%</strong>.</li>
+                  <li>Executed data benchmarking via Python and Power Query, generating insights that strengthened client engagement in the Life Sciences sector.</li>
+                  <li>Translated over 15 complex technical AI offerings into clear business propositions to directly support C-level decision-making.</li>
+                </ul>
+              </div>
+              <div class="experience-tech-tags">
+                <span>FastAPI</span><span>AWS CDK</span><span>Docker</span><span>Generative AI</span><span>Pytest</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: University -->
+          <div class="timeline-item">
+            <div class="timeline-marker"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Master of Science in Computer Science</h3>
+                  <div class="company-name">Albert-Ludwigs-Universität Freiburg</div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-badge">Freiburg, Germany</span>
+                  <span class="timeline-date">Oct 2024 – Sep 2027 (Expected)</span>
+                </div>
+              </div>
+              <p class="education-details">
+                <strong>Key Coursework:</strong> Machine Learning, Foundations of Deep Learning, Deep Learning Lab, Trustworthy AI Seminar, Intelligent Embedded Systems, Wearable Computing, RNA Bioinformatics, Digital Health.
+              </p>
+              <div class="experience-tech-tags">
+                <span>Machine Learning</span><span>Distributed Systems</span><span>Bioinformatics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Matrix -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Toolbox</span>
+          <h2 class="section-title">Technical Skills & Technologies</h2>
+          <p class="section-subtitle">
+            Core proficiencies across programming, machine learning, data engineering, and DevOps.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category glass-panel">
+            <div class="skill-cat-header">
+              <i class="fa-solid fa-code"></i>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-pill-list">
+              <span class="skill-pill"><i class="fa-brands fa-python"></i> Python (Expert)</span>
+              <span class="skill-pill"><i class="fa-solid fa-database"></i> SQL (Advanced)</span>
+              <span class="skill-pill"><i class="fa-brands fa-js"></i> TypeScript / JS</span>
+              <span class="skill-pill"><i class="fa-solid fa-terminal"></i> Bash Scripting</span>
+              <span class="skill-pill"><i class="fa-solid fa-c"></i> C / C++</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-panel">
+            <div class="skill-cat-header">
+              <i class="fa-solid fa-brain"></i>
+              <h3>AI & Deep Learning</h3>
+            </div>
+            <div class="skill-pill-list">
+              <span class="skill-pill">PyTorch</span>
+              <span class="skill-pill">Hugging Face Transformers</span>
+              <span class="skill-pill">Large Language Models (LLMs)</span>
+              <span class="skill-pill">RAG & Vector DBs (Qdrant)</span>
+              <span class="skill-pill">Computer Vision (DINOv2, V-JEPA)</span>
+              <span class="skill-pill">Equivariant Graph Neural Nets (EGNN)</span>
+              <span class="skill-pill">Scikit-learn</span>
+              <span class="skill-pill">MLflow</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-panel">
+            <div class="skill-cat-header">
+              <i class="fa-solid fa-server"></i>
+              <h3>Data Systems & Streaming</h3>
+            </div>
+            <div class="skill-pill-list">
+              <span class="skill-pill">Databricks</span>
+              <span class="skill-pill">Apache Spark / PySpark</span>
+              <span class="skill-pill">Apache Kafka / Redpanda</span>
+              <span class="skill-pill">PostgreSQL</span>
+              <span class="skill-pill">Redis</span>
+              <span class="skill-pill">Pandas / NumPy</span>
+              <span class="skill-pill">Delta Lake</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-panel">
+            <div class="skill-cat-header">
+              <i class="fa-solid fa-cloud"></i>
+              <h3>Cloud, DevOps & Tools</h3>
+            </div>
+            <div class="skill-pill-list">
+              <span class="skill-pill"><i class="fa-brands fa-aws"></i> AWS (CDK, S3, EC2)</span>
+              <span class="skill-pill"><i class="fa-brands fa-docker"></i> Docker & Containers</span>
+              <span class="skill-pill">Kubernetes</span>
+              <span class="skill-pill">FastAPI</span>
+              <span class="skill-pill">GitHub Actions CI/CD</span>
+              <span class="skill-pill">Terraform</span>
+              <span class="skill-pill">Prometheus & Grafana</span>
+              <span class="skill-pill">Pytest & TDD</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-panel">
+            <div class="skill-cat-header">
+              <i class="fa-solid fa-dna"></i>
+              <h3>Bioinformatics & Life Sciences</h3>
+            </div>
+            <div class="skill-pill-list">
+              <span class="skill-pill">Scanpy (scRNA-seq)</span>
+              <span class="skill-pill">Cell2Sentence Tokenization</span>
+              <span class="skill-pill">RDKit (Cheminformatics)</span>
+              <span class="skill-pill">Biopython (PDB parsing)</span>
+              <span class="skill-pill">3D Cell Painting Analysis</span>
+              <span class="skill-pill">Wearable Sensor / IMU Processing</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass-panel">
+            <div class="skill-cat-header">
+              <i class="fa-solid fa-language"></i>
+              <h3>Languages & Certifications</h3>
+            </div>
+            <div class="skill-pill-list">
+              <span class="skill-pill"><i class="fa-solid fa-earth-americas"></i> English (C1 Proficient)</span>
+              <span class="skill-pill"><i class="fa-solid fa-earth-europe"></i> German (B1 Intermediate)</span>
+              <span class="skill-pill"><i class="fa-solid fa-certificate"></i> AWS Cloud Foundations</span>
+              <span class="skill-pill"><i class="fa-solid fa-certificate"></i> Oracle Database Foundations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Developer CLI Terminal -->
+    <section class="section terminal-section" id="terminal-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Shell</span>
+          <h2 class="section-title">Developer Console & Terminal</h2>
+          <p class="section-subtitle">
+            Prefer keyboard navigation? Query my portfolio directly via the simulated terminal prompt.
+          </p>
+        </div>
+
+        <div class="terminal-window glass-panel" id="terminal-window">
+          <div class="terminal-topbar">
+            <div class="terminal-dots">
+              <span class="terminal-dot close"></span>
+              <span class="terminal-dot minimize"></span>
+              <span class="terminal-dot expand"></span>
+            </div>
+            <div class="terminal-title">arav@freiburg-station: ~ (zsh)</div>
+            <div class="terminal-actions">
+              <button class="terminal-btn-small" id="terminal-clear-btn" title="Clear Terminal">Clear</button>
+            </div>
+          </div>
+
+          <div class="terminal-body" id="terminal-body">
+            <div class="terminal-output" id="terminal-output">
+              <div class="term-line banner">
+                <span class="accent-text">Welcome to Arav Mendiratta's Interactive Portfolio Shell (v2.6)</span><br>
+                Type <span class="cmd-highlight">help</span> to view available commands, or click any chip below:
+              </div>
+            </div>
+
+            <div class="terminal-prompt-row">
+              <span class="term-prompt"><span class="prompt-user">arav@freiburg</span>:<span class="prompt-dir">~</span>$</span>
+              <input type="text" id="terminal-input" class="terminal-input" placeholder="Type a command (e.g. 'help', 'projects', 'skills')..." autocomplete="off" spellcheck="false" />
+            </div>
+          </div>
+
+          <div class="terminal-suggestions">
+            <span class="sugg-label">Quick Commands:</span>
+            <button class="term-chip" data-cmd="help">help</button>
+            <button class="term-chip" data-cmd="about">about</button>
+            <button class="term-chip" data-cmd="projects">projects</button>
+            <button class="term-chip" data-cmd="skills">skills</button>
+            <button class="term-chip" data-cmd="research">research</button>
+            <button class="term-chip" data-cmd="thesis">thesis</button>
+            <button class="term-chip" data-cmd="contact">contact</button>
+            <button class="term-chip" data-cmd="clear">clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Collaboration Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card glass-panel">
+          <div class="contact-content">
+            <span class="section-tag">Let's Connect</span>
+            <h2 class="contact-title">Seeking Collaborators for Master's Thesis & Engineering Roles</h2>
+            <p class="contact-text">
+              I am based in Düsseldorf / Freiburg (open to relocate or hybrid/remote). Whether you have 
+              an innovative research challenge in AI & Life Sciences, or an engineering role in high-throughput 
+              data systems, let's discuss how we can collaborate.
+            </p>
+
+            <div class="contact-methods">
+              <a href="mailto:arav.mendiratta1@gmail.com" class="contact-item" id="contact-email-link">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <div class="contact-item-label">Direct Email</div>
+                  <div class="contact-item-value">arav.mendiratta1@gmail.com</div>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/aravmendiratta/" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-linkedin-link">
+                <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
+                <div>
+                  <div class="contact-item-label">LinkedIn</div>
+                  <div class="contact-item-value">linkedin.com/in/aravmendiratta</div>
+                </div>
+              </a>
+
+              <a href="https://github.com/aravmendiratta" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-github-link">
+                <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                <div>
+                  <div class="contact-item-label">GitHub</div>
+                  <div class="contact-item-value">github.com/aravmendiratta</div>
+                </div>
+              </a>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <div class="contact-item-label">Phone</div>
+                  <div class="contact-item-value">+49 15510 134845</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-cta-buttons">
+              <a href="mailto:arav.mendiratta1@gmail.com?subject=Collaboration%20Inquiry%20-%20Arav%20Mendiratta" class="btn btn-primary" id="btn-send-email">
+                <i class="fa-solid fa-paper-plane"></i> Send an Email
+              </a>
+              <a href="assets/Arav_Mendiratta_Resume.pdf" class="btn btn-secondary" id="btn-download-resume" target="_blank" download>
+                <i class="fa-solid fa-file-pdf"></i> Download Official CV (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Details Modal -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog glass-panel" role="document">
+      <div class="modal-header">
+        <div class="modal-badge-wrapper">
+          <span class="modal-category" id="modal-category">Category</span>
+          <span class="modal-metric" id="modal-metric">Metric</span>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <h2 class="modal-title" id="modal-title">Project Title</h2>
+        <div class="modal-tags" id="modal-tags"></div>
+
+        <div class="modal-description" id="modal-description"></div>
+
+        <div class="modal-architecture-box">
+          <h3><i class="fa-solid fa-layer-group"></i> Architecture & Engineering Breakdown</h3>
+          <ul class="modal-architecture-list" id="modal-architecture-list"></ul>
+        </div>
+
+        <div class="modal-links" id="modal-links">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="modal-repo-link">
+            <i class="fa-brands fa-github"></i> View GitHub Repository
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="modal-demo-link">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Live Link / Paper
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Message -->
+  <div class="toast" id="toast">Command executed</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <p>© 2026 Arav Mendiratta. Built with semantic HTML, modern CSS & JavaScript. Ready for GitHub Pages.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top"><i class="fa-solid fa-arrow-up"></i> Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
