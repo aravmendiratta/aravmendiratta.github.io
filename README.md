@@ -1,6 +1,6 @@
-# Arav Mendiratta — Developer Portfolio Website
+# Arav Mendiratta — Developer Portfolio Website (`aravmendiratta.github.io`)
 
-[![GitHub Pages Deployment](https://img.shields.io/badge/Deploy-GitHub_Pages-10b981?style=for-the-badge&logo=github)](https://aravmendiratta.github.io/Portfolio/)
+[![GitHub Pages Deployment](https://img.shields.io/badge/Deploy-GitHub_Pages-10b981?style=for-the-badge&logo=github)](https://aravmendiratta.github.io/)
 [![Tech Stack](https://img.shields.io/badge/Tech-HTML5_|_CSS3_|_JavaScript-06b6d4?style=for-the-badge)](https://developer.mozilla.org/)
 
 An interactive, high-performance developer portfolio showcasing my work in Machine Learning, Distributed Streaming Systems, and Computational Biology.
@@ -10,6 +10,7 @@ An interactive, high-performance developer portfolio showcasing my work in Machi
 ## ⚡ Key Highlights
 - **Zero-Build Architecture:** Pure Semantic HTML5, Vanilla CSS3 (Custom Design System with Glassmorphism), and Vanilla ES6+ JavaScript.
 - **Instant GitHub Pages Ready:** Includes `.nojekyll` and static routing.
+- **Root Domain Hosting:** Configured for `aravmendiratta.github.io`.
 - **Interactive Project Deep Dives:** Modal architectural breakdowns for all 7 engineering platforms.
 - **Developer CLI Terminal:** An interactive shell allowing recruiters to type commands (`help`, `projects`, `skills`, `research`, `thesis`, `contact`, `theme`, `clear`).
 - **Cybernetic Theme System:** Sleek Dark Mode (Default) + High-Contrast Light Mode with local storage persistence.
@@ -32,26 +33,19 @@ Right-click `index.html` and click **"Open with Live Server"**.
 
 ---
 
-## 🌐 Deploy to GitHub Pages in 2 Minutes
+## 🌐 Deploy to https://aravmendiratta.github.io in 2 Minutes
 
-1. Initialize git and commit your files:
+Because the repository is named `aravmendiratta.github.io`, GitHub automatically treats it as your primary user site and deploys it directly to your root domain (`https://aravmendiratta.github.io/`):
+
+1. Go to [GitHub.com/new](https://github.com/new) and create a **Public** repository named **`aravmendiratta.github.io`** (make sure the username and repo name match).
+2. In your terminal inside this project folder, link to your new remote and push:
    ```bash
-   git init
-   git add .
-   git commit -m "feat: initial release of personal portfolio"
-   ```
-2. Create a new repository on GitHub named `Portfolio` (or `aravmendiratta.github.io`).
-3. Link your remote and push:
-   ```bash
-   git remote add origin https://github.com/aravmendiratta/Portfolio.git
+   git remote add origin https://github.com/aravmendiratta/aravmendiratta.github.io.git
    git branch -M main
    git push -u origin main
    ```
-4. On GitHub, navigate to **Settings** > **Pages**:
-   - Source: **Deploy from a branch**
-   - Branch: **main** / root `/`
-   - Click **Save**.
-5. Your live portfolio will be live at `https://aravmendiratta.github.io/Portfolio/`!
+3. GitHub Pages automatically detects the special repository name and publishes it. Within 60 seconds, your portfolio is live worldwide at:
+   👉 **https://aravmendiratta.github.io/**
 
 ---
 

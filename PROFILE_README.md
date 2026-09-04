@@ -5,7 +5,7 @@
 </div>
 
 <p align="center">
-  <a href="https://aravmendiratta.github.io/Portfolio/"><img src="https://img.shields.io/badge/🌐_Live_Portfolio-Visit_Website-10b981?style=for-the-badge&logoColor=white" alt="Live Portfolio"/></a>
+  <a href="https://aravmendiratta.github.io/"><img src="https://img.shields.io/badge/🌐_Live_Portfolio-Visit_Website-10b981?style=for-the-badge&logoColor=white" alt="Live Portfolio"/></a>
   <a href="https://www.linkedin.com/in/aravmendiratta/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:arav.mendiratta1@gmail.com"><img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </p>
