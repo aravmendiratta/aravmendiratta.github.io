@@ -1,687 +1,1056 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arav Mendiratta | AI & Distributed Data Systems Engineer</title>
-  <meta name="description" content="Portfolio of Arav Mendiratta - M.Sc. Computer Science Student at University of Freiburg specializing in Machine Learning, Distributed Streaming Systems, and Computational Biology.">
-  <meta name="keywords" content="Arav Mendiratta, AI Engineer, Machine Learning, Deep Learning, PyTorch, Kafka, PySpark, Databricks, Bioinformatics, Freiburg">
-  <meta name="author" content="Arav Mendiratta">
-  
-  <!-- Open Graph / Social Media -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Arav Mendiratta | Portfolio">
-  <meta property="og:description" content="AI, Machine Learning & Distributed Streaming Systems Engineer. M.Sc. Computer Science at University of Freiburg.">
-  <meta property="og:url" content="https://aravmendiratta.github.io/">
-  <meta property="og:image" content="https://aravmendiratta.github.io/assets/avatar.jpg">
-  <link rel="canonical" href="https://aravmendiratta.github.io/">
-  
-  <!-- Google Fonts: Outfit & Inter & JetBrains Mono -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- FontAwesome Icons CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/jpeg" href="assets/avatar.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arav Mendiratta — Portfolio ’26</title>
+<meta name="description" content="Arav Mendiratta — AI & Data Scientist based in Düsseldorf and Freiburg, Germany. Focusing on Generative AI, Business Transformation, and Bioinformatics.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='4' y='5' width='24' height='22' rx='3' transform='rotate(-5 16 16)' fill='%23FBE48C' stroke='%23282724' stroke-width='2'/><text x='16' y='21' text-anchor='middle' font-family='Georgia,serif' font-size='15' font-weight='bold' fill='%232A2305'>A</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Geist+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Ambient background glow & canvas -->
-  <canvas id="ambient-canvas"></canvas>
-  <div class="glow-orb glow-orb-1"></div>
-  <div class="glow-orb glow-orb-2"></div>
+<a class="skip" href="#main" data-en="Skip to content" data-de="Zum Inhalt springen">Skip to content</a>
 
-  <!-- Navigation Bar -->
-  <header class="navbar-wrapper" id="navbar">
-    <nav class="navbar container">
-      <a href="#hero" class="nav-brand" id="brand-link">
-        <span class="brand-avatar-mini">
-          <img src="assets/avatar.jpg" alt="Arav Mendiratta Emblem" />
+<!-- Top Bar + Floating Studio Pill Navigation -->
+<header class="top" id="top">
+  <a class="brand" href="#top">
+    <span class="brand-dot" aria-hidden="true"></span>
+    Arav Mendiratta
+  </a>
+
+  <nav class="pill" aria-label="Primary">
+    <a href="#top" class="on" data-nav="top" data-en="Home" data-de="Start">Home</a>
+    <a href="#about" data-nav="about" data-en="Experience" data-de="Erfahrung">Experience</a>
+    <div class="menu" id="menu">
+      <button type="button" class="menu-btn" aria-haspopup="true" aria-expanded="false">
+        <span data-en="Projects" data-de="Projekte">Projects</span>
+        <svg viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="menu-pop" role="menu">
+        <a role="menuitem" href="#domain-ai" data-domain-jump="ai-bio"><b data-en="Bioinformatics &amp; Health AI" data-de="Bioinformatik &amp; Health KI">Bioinformatics &amp; Health AI</b> <span>01</span></a>
+        <a role="menuitem" href="#domain-data" data-domain-jump="data-systems"><b data-en="GenAI &amp; Business Transformation" data-de="GenAI &amp; Business Transformation">GenAI &amp; Business Transformation</b> <span>02</span></a>
+        <a role="menuitem" href="#domain-edge" data-domain-jump="edge-ml"><b data-en="Applied AI &amp; Vision" data-de="Angewandte KI &amp; Vision">Applied AI &amp; Vision</b> <span>03</span></a>
+        <a role="menuitem" href="#work" data-domain-jump="all"><b data-en="All Projects" data-de="Alle Projekte">All Projects</b> <span>8</span></a>
+      </div>
+    </div>
+    <a href="#research" data-nav="research" data-en="Research" data-de="Forschung">Research</a>
+    <a href="assets/Arav_Mendiratta_Resume.pdf" target="_blank" rel="noopener" data-en="Resume ↗" data-de="Lebenslauf ↗">Resume ↗</a>
+
+    <!-- Language Toggle Tab (EN / DE) -->
+    <div class="lang-switch" role="group" aria-label="Language switcher">
+      <button type="button" class="lang-btn on" data-lang="en" aria-pressed="true" title="English">EN</button>
+      <button type="button" class="lang-btn" data-lang="de" aria-pressed="false" title="Deutsch">DE</button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ========================================================================
+       HERO: Tactile Sticky-Note Studio Board
+       ======================================================================== -->
+  <section class="hero-sec wrap" aria-label="Introduction">
+    <div class="stage-wrap">
+      <div class="stage" id="homeStage" data-w="1000" data-h="540" data-min="720" data-max="1.15">
+
+        <svg class="hd-defs" width="0" height="0" aria-hidden="true" focusable="false"><defs><filter id="hd-pen" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="11"/><feDisplacementMap in="SourceGraphic" scale="2.2" xChannelSelector="R" yChannelSelector="G"/></filter></defs></svg>
+
+        <!-- 1. Lavender: prev. & education -->
+        <div class="note n-prev" style="left:26px;top:176px;z-index:1;--r:-2.6deg">
+          <div class="tape" style="--tape-r:-2.5deg;left:45%" aria-hidden="true"></div>
+          <div>
+            <p class="pin" data-en="prev. &amp; education" data-de="stationen &amp; studium">prev. &amp; education</p>
+            <ul class="creds">
+              <li><b data-en="Data Scientist Intern" data-de="Data Scientist Praktikant">Data Scientist Intern</b><span>@ Capgemini</span></li>
+              <li><b data-en="Student Researcher" data-de="Studentischer Forscher">Student Researcher</b><span data-en="@ CRC 1597 Small Data" data-de="@ SFB 1597 Small Data">@ CRC 1597 Small Data</span></li>
+              <li><b data-en="M.Sc. Computer Science" data-de="M.Sc. Informatik">M.Sc. Computer Science</b><span>@ Uni Freiburg</span></li>
+            </ul>
+          </div>
+          <div class="n-links">
+            <a href="#about" data-en="About me →" data-de="Über mich →">About me →</a>
+            <a href="assets/Arav_Mendiratta_Resume.pdf" target="_blank" rel="noopener" data-en="Resume ↗" data-de="Lebenslauf ↗">Resume ↗</a>
+          </div>
+        </div>
+
+        <!-- 2. Polaroid photo (tucked behind the yellow note) -->
+        <div class="note n-polaroid" style="left:516px;top:126px;z-index:2;--r:3.2deg">
+          <div class="tape" style="--tape-r:1.8deg;left:50%" aria-hidden="true"></div>
+          <img src="assets/arav-photo.jpg" alt="Arav Mendiratta speaking at an AI session" width="683" height="1024" draggable="false">
+          <div class="sig" data-en="Sharing ideas, one room at a time." data-de="Ideen teilen, Raum für Raum.">Sharing ideas, one room at a time.</div>
+        </div>
+
+        <!-- 3. Yellow: intro (doodle of Arav coding at laptop with coffee) -->
+        <div class="note n-hero" style="left:236px;top:22px;z-index:3;--r:1.2deg">
+          <div class="tape" style="--tape-r:-1.2deg;left:48%" aria-hidden="true"></div>
+          <p class="pin" data-en="hi, i’m arav —" data-de="hi, ich bin arav —">hi, i’m arav —</p>
+          <h1 data-en="Thinking, tinkering, making things happen." data-de="Denken, tüfteln, Dinge möglich machen.">Thinking, tinkering, making things happen.</h1>
+          <svg class="doodle" viewBox="0 0 120 180" aria-hidden="true">
+            <g filter="url(#hd-pen)" fill="none" stroke="#262118" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M42 34 c-8 -14 16 -18 28 -6 c8 -4 18 4 14 14" fill="#262118"/>
+              <path d="M44 38 c-2 10 2 22 14 24 c10 2 20 -6 20 -18"/>
+              <rect x="42" y="38" width="14" height="12" rx="3" fill="#fff" fill-opacity="0.6"/>
+              <rect x="62" y="38" width="14" height="12" rx="3" fill="#fff" fill-opacity="0.6"/>
+              <path d="M56 43 h6 M38 42 l4 2 M76 44 l4 -2"/>
+              <path d="M46 44 c1.5 1.5 3.5 1.5 5 0 M66 44 c1.5 1.5 3.5 1.5 5 0"/>
+              <path d="M53 52 q5 4 10 0"/>
+              <path d="M52 62 v6 M64 62 v6"/>
+              <path d="M38 72 c6 -7 14 -8 20 -8 s16 1 22 8 l-4 44 h-34 z" fill="#FAF8F0" fill-opacity="0.4"/>
+              <path d="M38 80 l-14 18 l22 8"/>
+              <path d="M76 80 l14 18 l-20 8"/>
+              <path d="M40 98 l34 0 l8 -22 l-34 0 z" fill="#fff" fill-opacity="0.8"/>
+              <path d="M46 83 h18 M46 88 h24 M46 93 h12" stroke-width="1.6"/>
+              <path d="M32 98 h50 l4 4 h-58 z" fill="#262118"/>
+              <path d="M88 102 h10 v12 a4 4 0 0 1 -8 0 z" fill="#FAF8F0" fill-opacity="0.6"/>
+              <path d="M98 104 h3 a2 2 0 0 1 0 4 h-3"/>
+              <path d="M91 94 c-2 -4 2 -6 0 -10 M95 92 c-2 -4 2 -6 0 -10" stroke-width="1.6" opacity="0.7"/>
+              <path d="M14 112 h96" stroke-width="2"/>
+              <path d="M26 118 q32 6 64 0" stroke-width="1.6" opacity="0.6"/>
+              <path d="M84 22 l3 3 l-3 3 l-3 -3 z M22 54 l2.5 2.5 l-2.5 2.5 l-2.5 -2.5 z" fill="#262118"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- 4. Split-flap name board -->
+        <div class="note n-flap" style="left:680px;top:24px;z-index:5;--r:-1.2deg" title="click to flip">
+          <div class="tape" style="--tape-r:1.4deg;left:50%" aria-hidden="true"></div>
+          <div class="flap" id="flap" role="img" aria-label="Generative AI for business"></div>
+        </div>
+
+        <!-- 5. Mint: focus (with AI-native business transformation) -->
+        <div class="note n-skills" style="left:730px;top:262px;z-index:4;--r:2.2deg">
+          <div class="tape" style="--tape-r:-2deg;left:52%" aria-hidden="true"></div>
+          <p class="pin" data-en="what i focus on:" data-de="mein fokus:">what i focus on:</p>
+          <div class="chips">
+            <span class="chip" data-en="GenAI &amp; LLM agents" data-de="GenAI &amp; LLM-Agenten">GenAI &amp; LLM agents</span>
+            <span class="chip" data-en="AI-native business transformation" data-de="KI-native Business Transformation">AI-native business transformation</span>
+            <span class="chip" data-en="bioinformatics" data-de="Bioinformatik">bioinformatics</span>
+            <span class="chip" data-en="data platforms &amp; analytics" data-de="Datenplattformen &amp; Analytics">data platforms &amp; analytics</span>
+          </div>
+        </div>
+
+        <!-- Hand-drawn COLORED Stickers -->
+        <!-- Sticker 1: Terminal Window -->
+        <div class="note sticker st-term" style="left:82px;top:56px;z-index:6;--r:-8deg" aria-hidden="true">
+          <svg viewBox="0 0 110 94"><g filter="url(#hd-pen)">
+            <g stroke="#fff" stroke-width="9" stroke-linejoin="round" fill="#fff">
+              <rect x="14" y="14" width="82" height="66" rx="8"/>
+            </g>
+            <g stroke="#262118" stroke-width="2.2" stroke-linejoin="round">
+              <rect x="14" y="14" width="82" height="66" rx="8" fill="#282A36"/>
+              <path d="M14 30 h82" stroke="#44475A" stroke-width="1.5"/>
+              <circle cx="24" cy="22" r="3" fill="#FF5555" stroke="none"/>
+              <circle cx="33" cy="22" r="3" fill="#FFB86C" stroke="none"/>
+              <circle cx="42" cy="22" r="3" fill="#50FA7B" stroke="none"/>
+              <path d="M26 48 l9 7 -9 7 M42 62 h16" stroke="#50FA7B" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+              <path d="M64 48 h16" stroke="#8BE9FD" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+            </g>
+          </g></svg>
+        </div>
+
+        <!-- Sticker 2: Emerald Sprout Leaf -->
+        <div class="note sticker st-leaf" style="left:14px;top:310px;z-index:6;--r:-12deg" aria-hidden="true">
+          <svg viewBox="0 0 80 80"><g filter="url(#hd-pen)">
+            <g stroke="#fff" stroke-width="9" stroke-linejoin="round" fill="#fff">
+              <path d="M38 68 C38 48 50 28 66 22 C64 42 50 58 38 68 Z"/>
+              <path d="M38 68 C38 52 30 36 16 32 C18 46 28 58 38 68 Z"/>
+            </g>
+            <g stroke="#262118" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M38 68 C38 48 50 28 66 22 C64 42 50 58 38 68 Z" fill="#52B788"/>
+              <path d="M38 68 C38 52 30 36 16 32 C18 46 28 58 38 68 Z" fill="#74C69D"/>
+              <path d="M38 68 C42 52 48 40 56 32 M38 68 C34 54 28 44 24 38" fill="none" stroke-width="1.6"/>
+            </g>
+          </g></svg>
+        </div>
+
+        <!-- Sticker 3: Golden Chess Pawn -->
+        <div class="note sticker st-pawn" style="left:172px;top:442px;z-index:6;--r:-6deg" aria-hidden="true">
+          <svg viewBox="0 0 80 100"><g filter="url(#hd-pen)">
+            <g stroke="#fff" stroke-width="9" stroke-linejoin="round" fill="#fff">
+              <path d="M22 84 h36 q4 0 4 -4 q0 -6 -6 -8 q-8 -12 -7 -28 h-14 q1 16 -7 28 q-6 2 -6 8 q0 4 4 4 z"/>
+              <circle cx="40" cy="27" r="13"/>
+            </g>
+            <g stroke="#262118" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 84 h36 q4 0 4 -4 q0 -6 -6 -8 q-8 -12 -7 -28 h-14 q1 16 -7 28 q-6 2 -6 8 q0 4 4 4 z" fill="#E9C46A"/>
+              <path d="M26 44 h28 q2 0 2 -3 q0 -3 -2 -3 h-28 q-2 0 -2 3 q0 3 2 3 z" fill="#FAF8F0"/>
+              <circle cx="40" cy="27" r="13" fill="#E9C46A"/>
+              <circle cx="44" cy="24" r="3.5" fill="#FAF8F0" opacity="0.6" stroke="none"/>
+              <path d="M22 84 h36" stroke-width="2"/>
+            </g>
+          </g></svg>
+        </div>
+
+        <!-- Sticker 4: Steaming Coffee Mug -->
+        <div class="note sticker st-cup" style="left:406px;top:350px;z-index:6;--r:7deg" aria-hidden="true">
+          <svg viewBox="0 0 100 104"><g filter="url(#hd-pen)">
+            <g stroke="#fff" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" fill="#fff">
+              <path d="M24 38 h50 v34 a18 18 0 0 1 -18 18 h-14 a18 18 0 0 1 -18 -18 z"/>
+              <path d="M74 44 h10 a8 8 0 0 1 0 16 h-10"/>
+            </g>
+            <g stroke="#262118" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M74 44 h10 a8 8 0 0 1 0 16 h-10" fill="none"/>
+              <path d="M24 38 h50 v34 a18 18 0 0 1 -18 18 h-14 a18 18 0 0 1 -18 -18 z" fill="#F4A261"/>
+              <ellipse cx="49" cy="38" rx="25" ry="6" fill="#582F0E"/>
+              <ellipse cx="49" cy="38" rx="19" ry="3.5" fill="#3D1E03"/>
+              <path d="M49 66 c-4 -6 -10 -4 -10 2 c0 4 6 8 10 11 c4 -3 10 -7 10 -11 c0 -6 -6 -8 -10 -2 z" fill="#E63946" stroke="#262118" stroke-width="1.4"/>
+              <path d="M41 24 c-2 -5 3 -7 0 -13 M57 22 c-2 -5 3 -7 0 -13" fill="none" stroke="#8D99AE" stroke-width="2" opacity="0.8"/>
+            </g>
+          </g></svg>
+        </div>
+
+        <!-- Sticker 5: Golden Sparkle Star -->
+        <div class="note sticker st-star" style="left:482px;top:18px;z-index:6;--r:12deg" aria-hidden="true">
+          <svg viewBox="0 0 80 80"><g filter="url(#hd-pen)">
+            <g stroke="#fff" stroke-width="9" stroke-linejoin="round" fill="#fff">
+              <path d="M40 8 C42 26 54 38 72 40 C54 42 42 54 40 72 C38 54 26 42 8 40 C26 38 38 26 40 8 Z"/>
+            </g>
+            <g stroke="#262118" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M40 8 C42 26 54 38 72 40 C54 42 42 54 40 72 C38 54 26 42 8 40 C26 38 38 26 40 8 Z" fill="#FFB703"/>
+              <circle cx="40" cy="40" r="5" fill="#FFF3B0" stroke="none"/>
+              <path d="M58 20 l2 2 l-2 2 l-2 -2 z M20 60 l2 2 l-2 2 l-2 -2 z" fill="#262118"/>
+            </g>
+          </g></svg>
+        </div>
+
+        <!-- Sticker 6: Volleyball -->
+        <div class="note sticker st-ball" style="left:562px;top:28px;z-index:6;--r:-10deg" aria-hidden="true">
+          <svg viewBox="0 0 100 100"><g filter="url(#hd-pen)">
+            <g stroke="#fff" stroke-width="9" stroke-linejoin="round" fill="#fff">
+              <circle cx="50" cy="50" r="34"/>
+            </g>
+            <g stroke="#262118" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="50" cy="50" r="34" fill="#FAF9F6"/>
+              <path d="M50 16 C36 28 36 44 50 50 C64 56 64 72 50 84" fill="none"/>
+              <path d="M21 33 C34 40 43 34 50 50 C43 66 34 60 21 67" fill="none"/>
+              <path d="M79 33 C66 40 57 34 50 50 C57 66 66 60 79 67" fill="none"/>
+              <path d="M50 16 C36 28 36 44 50 50 C43 34 34 40 21 33 C28 23 38 18 50 16 Z" fill="#FBE48C"/>
+              <path d="M50 50 C64 56 64 72 50 84 C38 82 28 77 21 67 C34 60 43 66 50 50 Z" fill="#7BB8E8"/>
+              <path d="M50 50 C57 34 66 40 79 33 C72 23 62 18 50 16 C36 28 36 44 50 50 Z" fill="#FAF9F6"/>
+            </g>
+          </g></svg>
+        </div>
+
+        <!-- Sticker 7: Molecular / Graph Node Cluster -->
+        <div class="note sticker st-bio" style="left:686px;top:212px;z-index:6;--r:-6deg" aria-hidden="true">
+          <svg viewBox="0 0 96 96"><g filter="url(#hd-pen)">
+            <g stroke="#fff" stroke-width="9" stroke-linejoin="round" fill="#fff">
+              <line x1="28" y1="62" x2="48" y2="28"/>
+              <line x1="48" y1="28" x2="68" y2="58"/>
+              <line x1="28" y1="62" x2="68" y2="58"/>
+              <circle cx="48" cy="28" r="12"/>
+              <circle cx="28" cy="62" r="11"/>
+              <circle cx="68" cy="58" r="11"/>
+            </g>
+            <g stroke="#262118" stroke-width="2.2" stroke-linecap="round">
+              <line x1="28" y1="62" x2="48" y2="28"/>
+              <line x1="48" y1="28" x2="68" y2="58"/>
+              <line x1="28" y1="62" x2="68" y2="58"/>
+              <circle cx="48" cy="28" r="12" fill="#90E0EF"/>
+              <circle cx="28" cy="62" r="11" fill="#CDB4DB"/>
+              <circle cx="68" cy="58" r="11" fill="#B7E4C7"/>
+              <circle cx="45" cy="25" r="3" fill="#fff" opacity="0.6" stroke="none"/>
+            </g>
+          </g></svg>
+        </div>
+
+        <!-- Sticker 8: Strawberry Heart -->
+        <div class="note sticker st-heart" style="left:938px;top:204px;z-index:6;--r:12deg" aria-hidden="true">
+          <svg viewBox="0 0 86 78"><g filter="url(#hd-pen)">
+            <g stroke="#fff" stroke-width="9" stroke-linejoin="round" fill="#fff">
+              <path d="M43 68 C20 52 8 40 10 24 C12 10 30 4 43 20 C56 4 74 10 76 24 C78 40 66 52 43 68Z"/>
+            </g>
+            <g stroke="#262118" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M43 68 C20 52 8 40 10 24 C12 10 30 4 43 20 C56 4 74 10 76 24 C78 40 66 52 43 68Z" fill="#EF476F"/>
+              <path d="M24 26 C25 20 29 17 33 17" fill="none" stroke="#fff" stroke-width="2.4"/>
+            </g>
+          </g></svg>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hero-cues">
+      <button type="button" class="bio-trigger-btn" id="openBioModal" aria-haspopup="dialog" aria-expanded="false">
+        <span class="sc-sticker">
+          <span class="sc-title">
+            <span data-en="Beyond the keyboard ↗" data-de="Beyond the keyboard ↗">Beyond the keyboard ↗</span>
+          </span>
+          <span class="sc-sub" data-en="click here" data-de="hier klicken">click here</span>
         </span>
-        <span class="brand-text">Arav<span class="accent-dot">.</span>ai</span>
-      </a>
+      </button>
+    </div>
+  </section>
 
-      <div class="nav-menu" id="nav-menu">
-        <a href="#about" class="nav-link" id="nav-link-about">About</a>
-        <a href="#projects" class="nav-link" id="nav-link-projects">Projects</a>
-        <a href="#research" class="nav-link" id="nav-link-research">Research</a>
-        <a href="#experience" class="nav-link" id="nav-link-experience">Experience</a>
-        <a href="#skills" class="nav-link" id="nav-link-skills">Skills</a>
-        <a href="#terminal-section" class="nav-link" id="nav-link-terminal"><i class="fa-solid fa-terminal"></i> CLI</a>
-        <a href="#contact" class="nav-link" id="nav-link-contact">Contact</a>
+  <!-- ========================================================================
+       BIO MODAL: Tactile Pop-up Note (About Me)
+       ======================================================================== -->
+  <div class="bio-overlay" id="bioModal" role="dialog" aria-modal="true" aria-labelledby="bioTitle" hidden>
+    <div class="bio-card">
+      <div class="tape" aria-hidden="true"></div>
+      <button type="button" class="bio-close" id="closeBioModal" aria-label="Close note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="bio-badge">
+        <span class="bio-dot" aria-hidden="true"></span>
+        <span data-en="Arav Mendiratta · More About Me" data-de="Arav Mendiratta · Mehr über mich">Arav Mendiratta · More About Me</span>
       </div>
 
-      <div class="nav-actions">
-        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light and dark theme">
-          <i class="fa-solid fa-moon" id="theme-icon"></i>
-        </button>
-        <a href="assets/Arav_Mendiratta_Resume.pdf" class="btn btn-outline btn-sm nav-cv-btn" id="nav-resume-btn" target="_blank" download>
-          <i class="fa-solid fa-file-arrow-down"></i> <span>Resume</span>
-        </a>
-        <button class="hamburger-btn" id="hamburger-btn" aria-label="Open mobile menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </nav>
-  </header>
+      <h2 id="bioTitle" class="bio-heading" data-en="A little more about my journey, work &amp; life." data-de="Einblicke in meinen Werdegang, meine Arbeit &amp; mein Leben.">A little more about my journey, work &amp; life.</h2>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero-section" id="hero">
-      <div class="container hero-container">
-        <div class="hero-content">
-          <div class="status-badge">
-            <span class="pulse-indicator"></span>
-            <span>M.Sc. Computer Science @ University of Freiburg</span>
-          </div>
+      <div class="bio-content">
+        <p data-en="I'm currently pursuing my M.Sc. in Computer Science at the <strong>University of Freiburg</strong>, focusing on Artificial Intelligence, Bioinformatics, and Distributed Systems, with plans to complete my master's in 2027. Before moving to Germany, I completed my B.Tech in Computer Science &amp; Engineering at SRM Institute of Science &amp; Technology. My work sits at the intersection of generative AI, high-throughput computational biology, and AI-native business transformation. I always position myself as domain-agnostic. I focus on results, pragmatic problem-solving, and efficient working across any challenge."
+           data-de="Ich absolviere derzeit meinen Master in Informatik an der <strong>Universität Freiburg</strong> mit den Schwerpunkten Künstliche Intelligenz, Bioinformatik und Verteilte Systeme, den ich 2027 abschließen werde. Zuvor schloss ich meinen Bachelor in Informatik an der SRM University ab. Meine Arbeit verbindet generative KI, bioinformatische Hochdurchsatz-Analysen und KI-gestützte Business Transformation. Dabei verstehe ich mich als domain-agnostisch. Mein Fokus liegt konsequent auf greifbaren Ergebnissen, pragmatischen Lösungen und effizienter Arbeitsweise.">
+          I'm currently pursuing my M.Sc. in Computer Science at the <strong>University of Freiburg</strong>, focusing on Artificial Intelligence, Bioinformatics, and Distributed Systems, with plans to complete my master's in 2027. Before moving to Germany, I completed my B.Tech in Computer Science &amp; Engineering at SRM Institute of Science &amp; Technology. My work sits at the intersection of generative AI, high-throughput computational biology, and AI-native business transformation. I always position myself as domain-agnostic. I focus on results, pragmatic problem-solving, and efficient working across any challenge.
+        </p>
 
-          <h1 class="hero-title">
-            Engineering High-Throughput <span class="gradient-text">AI Models & Streaming Systems</span>
-          </h1>
+        <p data-en="I have been fortunate to have both industry and research experience while working. On the industry side with Capgemini, the first half of my internship was in a consulting role within the Insights &amp; Data team for business transformations. I worked with success stories from across Capgemini to build compelling business proposals, speaking directly with clients from various industries to understand their needs and converting complex technical offerings into clear business insights. For the second half of the internship, I transitioned into a GenAI developer role with the AUDI team. I worked alongside designers from AUDI to build a tool that helps them significantly reduce their manual design and mockup phase, taking on a backend role dealing with AWS, Docker, and cloud services."
+           data-de="Ich hatte das Glück, während meiner bisherigen Laufbahn sowohl Industrie- als auch Forschungserfahrung sammeln zu können. Auf Unternehmensseite bei Capgemini war die erste Hälfte meines Praktikums eine beratende Rolle im Insights &amp; Data Team für Business Transformationen. Dabei nutzte ich Erfolgsgeschichten aus dem gesamten Capgemini-Netzwerk für strategische Kundenangebote, sprach mit Kunden unterschiedlichster Branchen über deren Anforderungen und übersetzte komplexe technische Lösungen in klare geschäftliche Mehrwerte. In der zweiten Hälfte wechselte ich als GenAI-Entwickler ins AUDI-Projektteam: Gemeinsam mit Designern von AUDI bauten wir ein Tool zur drastischen Verkürzung manueller Design- und Mockup-Phasen, wobei ich vor allem für das Backend und die Cloud-Infrastruktur auf AWS zuständig war.">
+          I have been fortunate to have both industry and research experience while working. On the industry side with Capgemini, the first half of my internship was in a consulting role within the Insights &amp; Data team for business transformations. I worked with success stories from across Capgemini to build compelling business proposals, speaking directly with clients from various industries to understand their needs and converting complex technical offerings into clear business insights. For the second half of the internship, I transitioned into a GenAI developer role with the AUDI team. I worked alongside designers from AUDI to build a tool that helps them significantly reduce their manual design and mockup phase, taking on a backend role dealing with AWS, Docker, and cloud services.
+        </p>
 
-          <p class="hero-lead">
-            Hi, I'm <strong>Arav Mendiratta</strong>. I specialize in building reliable, fault-tolerant 
-            distributed data architectures, foundation ML models, and computational biology pipelines. 
-            Passionate about engineering systems that convert raw, complex datasets into high-impact intelligence.
-          </p>
+        <p data-en="On the research side at CRC 1597 'Small Data', we wanted to explore using LLMs as relational judges to construct ordinal embeddings, dealing with high-dimensional single-cell genomic data. My focus was hands-on engineering: building end-to-end LLMOps pipelines, implementing guardrails, and running extensive prompt optimization for reliable biological representation learning."
+           data-de="In meiner Forschungsarbeit am SFB 1597 „Small Data“ untersuchten wir den Einsatz von LLMs als relationale Bewerter zur Erstellung ordinaler Einbettungen auf hochdimensionalen Einzelzell-Genomdaten. Mein Fokus lag dabei auf der praktischen Umsetzung: dem Aufbau von LLMOps-Pipelines, der Implementierung von Guardrails und systematischer Prompt-Optimierung für verlässliches Repräsentationslernen.">
+          On the research side at CRC 1597 'Small Data', we wanted to explore using LLMs as relational judges to construct ordinal embeddings, dealing with high-dimensional single-cell genomic data. My focus was hands-on engineering: building end-to-end LLMOps pipelines, implementing guardrails, and running extensive prompt optimization for reliable biological representation learning.
+        </p>
 
-          <div class="hero-cta-group">
-            <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
-              <i class="fa-solid fa-microchip"></i> Explore Projects
-            </a>
-            <a href="https://github.com/aravmendiratta" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="hero-cta-github">
-              <i class="fa-brands fa-github"></i> GitHub Profile
-            </a>
-            <a href="#terminal-section" class="btn btn-ghost" id="hero-cta-cli">
-              <i class="fa-solid fa-terminal"></i> Launch CLI
-            </a>
-          </div>
+        <p data-en="At work, I am fundamentally a team player who values feedback above everything else. I believe in listening first, communicating transparently, and holding myself to high personal standards. Being on time everywhere and respecting everyone's time is something I live by."
+           data-de="Im Beruf bin ich ein echter Teamplayer, der Feedback über alles schätzt. Ich höre grundsätzlich zuerst zu, kommuniziere offen und stelle hohe Ansprüche an mich selbst. Pünktlichkeit und der Respekt vor der Zeit anderer sind für mich unverzichtbare Grundwerte.">
+          At work, I am fundamentally a team player who values feedback above everything else. I believe in listening first, communicating transparently, and holding myself to high personal standards. Being on time everywhere and respecting everyone's time is something I live by.
+        </p>
 
-          <div class="hero-social-links">
-            <a href="mailto:arav.mendiratta1@gmail.com" title="Email Arav" class="social-icon" id="hero-email">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/aravmendiratta/" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile" class="social-icon" id="hero-linkedin">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/aravmendiratta" target="_blank" rel="noopener noreferrer" title="GitHub Profile" class="social-icon" id="hero-github">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <span class="location-pill">
-              <i class="fa-solid fa-location-dot"></i> Düsseldorf & Freiburg, Germany
-            </span>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="visual-card-wrapper">
-            <div class="visual-card-glow"></div>
-            <div class="visual-card">
-              <div class="visual-card-header">
-                <span class="window-dot red"></span>
-                <span class="window-dot yellow"></span>
-                <span class="window-dot green"></span>
-                <span class="window-title">system_state.py</span>
-              </div>
-              <div class="visual-card-body">
-                <div class="avatar-ring">
-                  <img src="assets/avatar.jpg" alt="Arav Mendiratta" class="hero-avatar" />
-                </div>
-                <div class="code-snippet">
-                  <span class="code-comment"># Live Engineering Telemetry</span>
-                  <p><span class="code-keyword">profile</span> = {</p>
-                  <p class="indent-1"><span class="code-string">"role"</span>: <span class="code-val">"AI & Distributed Systems"</span>,</p>
-                  <p class="indent-1"><span class="code-string">"thesis_focus"</span>: <span class="code-val">"Seeking Collaboration"</span>,</p>
-                  <p class="indent-1"><span class="code-string">"status"</span>: <span class="code-val">"Open to Opportunities"</span>,</p>
-                  <p class="indent-1"><span class="code-string">"languages"</span>: [<span class="code-val">"Python"</span>, <span class="code-val">"SQL"</span>, <span class="code-val">"TypeScript"</span>],</p>
-                  <p class="indent-1"><span class="code-string">"stack"</span>: [<span class="code-val">"PyTorch"</span>, <span class="code-val">"Kafka"</span>, <span class="code-val">"PySpark"</span>]</p>
-                  <p>}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Quick Metrics Bar -->
-      <div class="container metrics-container">
-        <div class="metric-card">
-          <div class="metric-icon"><i class="fa-solid fa-bolt"></i></div>
-          <div class="metric-number" data-target="25000" data-suffix="+ msg/s">25,000+</div>
-          <div class="metric-label">Streaming Event Throughput</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-icon"><i class="fa-solid fa-database"></i></div>
-          <div class="metric-number" data-target="10" data-suffix="M+ records">10M+</div>
-          <div class="metric-label">Processed in PySpark Pipeline</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-icon"><i class="fa-solid fa-dna"></i></div>
-          <div class="metric-number" data-target="35" data-suffix="% boost">35%</div>
-          <div class="metric-label">scRNA-seq Classification Boost</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-icon"><i class="fa-solid fa-award"></i></div>
-          <div class="metric-number" data-target="97" data-suffix="%+ acc">97%+</div>
-          <div class="metric-label">Published Model Accuracy</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="section about-section" id="about">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Background & Vision</span>
-          <h2 class="section-title">Bridging Theory, Systems, and Impact</h2>
-          <p class="section-subtitle">
-            Combining machine learning rigor with scalable software engineering to deliver reproducible solutions.
+        <div class="bio-human-box">
+          <h3 data-en="Beyond the Terminal" data-de="Abseits des Terminals">Beyond the Terminal</h3>
+          <p data-en="Outside of work, being right next to the Black Forest makes hiking one of my favorite ways to recharge. I love playing volleyball and am an active player on a local team in Freiburg. Music is a constant in my life, and my Spotify Wrapped minutes are always through the roof. And whenever I have free time, I love to travel and explore new cities and landscapes."
+             data-de="Außerhalb der Arbeit gehe ich unglaublich gerne wandern, der nahegelegene Schwarzwald bietet dafür die perfekte Kulisse. Ich spiele leidenschaftlich gern Volleyball und bin aktiver Teil eines lokalen Teams in Freiburg. Musik begleitet mich durch den ganzen Tag, meine Spotify-Wrapped-Minuten liegen verlässlich ganz weit oben. In meiner freien Zeit reise ich zudem für mein Leben gern, um neue Orte und Landschaften kennenzulernen.">
+            Outside of work, being right next to the Black Forest makes hiking one of my favorite ways to recharge. I love playing volleyball and am an active player on a local team in Freiburg. Music is a constant in my life, and my Spotify Wrapped minutes are always through the roof. And whenever I have free time, I love to travel and explore new cities and landscapes.
           </p>
         </div>
 
-        <div class="about-grid">
-          <div class="about-card glass-panel">
-            <div class="about-card-icon"><i class="fa-solid fa-brain"></i></div>
-            <h3>Deep Learning & AI</h3>
-            <p>
-              Specializing in Transformers, Graph Neural Networks (E(3) Equivariant architectures), 
-              Computer Vision (Meta DINOv2/V-JEPA), and Retrieval-Augmented Generation (RAG) 
-              with verifiable citation tracing and low-latency streaming backends.
-            </p>
-          </div>
-
-          <div class="about-card glass-panel">
-            <div class="about-card-icon"><i class="fa-solid fa-network-wired"></i></div>
-            <h3>Distributed Data Engineering</h3>
-            <p>
-              Architecting production pipelines with PySpark on Databricks, Apache Kafka / Redpanda, 
-              Delta Lake, and PostgreSQL. Focused on deterministic simulation, five-dimension data quality 
-              verification, and microsecond order book reconstructions.
-            </p>
-          </div>
-
-          <div class="about-card glass-panel">
-            <div class="about-card-icon"><i class="fa-solid fa-flask-vial"></i></div>
-            <h3>Computational Life Sciences</h3>
-            <p>
-              Pioneering machine learning applied to high-dimensional biological data — from 
-              Cell-to-Sentence representations across 10,000+ gene count matrices at CRC 1597 Small Data 
-              to 3D protein-ligand binding affinity prediction.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section projects-section" id="projects">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Featured Work</span>
-          <h2 class="section-title">Engineering Projects & Systems</h2>
-          <p class="section-subtitle">
-            Explore hands-on distributed streaming engines, deep learning architectures, and production platforms.
+        <div class="bio-ps">
+          <p data-en="<strong>P.S.</strong> There are easter eggs on this studio notebook board. Try dragging the sticky notes around, clicking the split-flap board to flip through phrases, or discovering hidden stickers! Drop the emoji in your email subject line when you reach out!"
+             data-de="<strong>P.S.</strong> Auf diesem Studio-Board gibt es ein paar Easter Eggs. Probiere aus, die Notizen zu verschieben, klicke auf die Fallblattanzeige oder entdecke die Sticker! Schreib das Emoji in deine E-Mail-Betreffzeile!">
+            <strong>P.S.</strong> There are easter eggs on this studio notebook board. Try dragging the sticky notes around, clicking the split-flap board to flip through phrases, or discovering hidden stickers! Drop the emoji in your email subject line when you reach out!
           </p>
-        </div>
-
-        <!-- Filter Controls -->
-        <div class="filter-controls" id="filter-controls">
-          <button class="filter-btn active" data-filter="all">All Projects <span class="filter-count">(7)</span></button>
-          <button class="filter-btn" data-filter="systems">Data Systems & Streaming <span class="filter-count">(2)</span></button>
-          <button class="filter-btn" data-filter="aiml">AI & Deep Learning <span class="filter-count">(3)</span></button>
-          <button class="filter-btn" data-filter="bioinfo">Bioinformatics & Vision <span class="filter-count">(2)</span></button>
-        </div>
-
-        <!-- Project Cards Grid -->
-        <div class="projects-grid" id="projects-grid">
-          <!-- Project items populated via JavaScript / static fallback -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Research & Seminars Section -->
-    <section class="section research-section" id="research">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Academic Rigor</span>
-          <h2 class="section-title">Research, Seminars & Presentations</h2>
-          <p class="section-subtitle">
-            Presentations, seminar deep-dives, and peer-reviewed publications at Albert-Ludwigs-Universität Freiburg.
-          </p>
-        </div>
-
-        <div class="research-grid">
-          <!-- Research 1 -->
-          <div class="research-card glass-panel">
-            <div class="research-badge">Seminar Presentation • Feb 2026</div>
-            <h3 class="research-title">Grad-CAMO: Interpretable Morphological Profiles from 3D Cell Painting</h3>
-            <p class="research-meta"><i class="fa-solid fa-graduation-cap"></i> Master Seminar: Trustworthy AI | Uni Freiburg</p>
-            <p class="research-desc">
-              Investigated Gopalakrishnan et al. (CVPR Workshop 2024), analyzing how supervised deep learning 
-              models in image-based drug discovery can erroneously exploit biologically irrelevant background artifacts. 
-              Evaluated Grad-CAM Overlap (Grad-CAMO) to audit attention fidelity on true single-cell regions.
-            </p>
-            <div class="research-tags">
-              <span>Interpretability</span>
-              <span>Cell Painting</span>
-              <span>Drug Discovery</span>
-              <span>Grad-CAM</span>
-            </div>
-          </div>
-
-          <!-- Research 2 -->
-          <div class="research-card glass-panel">
-            <div class="research-badge highlight">Full Reproduction • Aug 2026</div>
-            <h3 class="research-title">SSSL-HAR: Synthetic Self-Supervised Learning for Wearable Activity Recognition</h3>
-            <p class="research-meta"><i class="fa-solid fa-graduation-cap"></i> Master Seminar: Intelligent Embedded Systems | Uni Freiburg</p>
-            <p class="research-desc">
-              Beyond analyzing Li et al. (IJCB 2025), built an independent, full engineering reproduction of the 
-              physics-based IMU simulation engine and Multi-View Contrastive Learning architecture from scratch, 
-              achieving <strong>88.15% zero-shot accuracy</strong> on the PAMAP2 benchmark.
-            </p>
-            <div class="research-tags">
-              <span>Self-Supervised</span>
-              <span>Wearable Computing</span>
-              <span>Contrastive Learning</span>
-              <span>88.15% Zero-Shot</span>
-            </div>
-          </div>
-
-          <!-- Research 3 -->
-          <div class="research-card glass-panel">
-            <div class="research-badge published">Peer-Reviewed Publication • 2024</div>
-            <h3 class="research-title">Tomato Crop Pathology Assessment Using Hybrid Computer Vision</h3>
-            <p class="research-meta"><i class="fa-solid fa-book-journal-whills"></i> Published at ICRCET-2024</p>
-            <p class="research-desc">
-              Designed a hybrid CNN inference pipeline classifying 10 disease categories across 16,011 images 
-              with <strong>97%+ accuracy</strong>. Integrated automated pathogen detection, healthy vs. diseased 
-              segmentation, and severity grading as a template for automated imaging diagnostics.
-            </p>
-            <div class="research-tags">
-              <span>Published Paper</span>
-              <span>Hybrid CNN</span>
-              <span>Computer Vision</span>
-              <span>OpenCV</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="section experience-section" id="experience">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Career History</span>
-          <h2 class="section-title">Industry & Academic Experience</h2>
-          <p class="section-subtitle">
-            Proven track record in research institutes, tier-one enterprise consulting, and top university coursework.
-          </p>
-        </div>
-
-        <div class="timeline">
-          <!-- Item 1: CRC 1597 -->
-          <div class="timeline-item">
-            <div class="timeline-marker"><i class="fa-solid fa-dna"></i></div>
-            <div class="timeline-content glass-panel">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="role-title">Student Researcher</h3>
-                  <div class="company-name">Collaborative Research Center 1597 Small Data</div>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-badge">Freiburg, Germany</span>
-                  <span class="timeline-date">May 2026 – July 2026</span>
-                </div>
-              </div>
-              <ul class="timeline-bullets">
-                <li>Independently engineered an end-to-end, LLM-powered pipeline to analyze medical data, converting high-dimensional scRNA-seq data into ordinal embeddings and <strong>improving rare cell-type classification accuracy by 35%</strong>.</li>
-                <li>Architected a Python pipeline to format <strong>over 10,000 gene count matrices</strong> as "cell sentences" (Cell2Sentence), mapping complex biological relationships <strong>3x faster</strong>.</li>
-                <li>Designed an interactive prompt-prototyping framework to systematically evaluate few-shot prompts, <strong>reducing batch deployment error rates by 20%</strong>.</li>
-                <li>Established MLOps and CI/CD workflows using GitHub Actions, <strong>decreasing model iteration deployment time by 40%</strong> and guaranteeing reproducible analysis environments.</li>
-              </ul>
-              <div class="experience-tech-tags">
-                <span>PyTorch</span><span>scRNA-seq</span><span>Scanpy</span><span>Hugging Face</span><span>GitHub Actions</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 2: Capgemini -->
-          <div class="timeline-item">
-            <div class="timeline-marker"><i class="fa-solid fa-briefcase"></i></div>
-            <div class="timeline-content glass-panel">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="role-title">Data Scientist (Working Student)</h3>
-                  <div class="company-name">Capgemini Germany</div>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-badge">Stuttgart, Germany</span>
-                  <span class="timeline-date">June 2025 – Dec 2025</span>
-                </div>
-              </div>
-
-              <div class="sub-experience">
-                <h4><i class="fa-solid fa-car"></i> AUDI Generative AI Tool</h4>
-                <ul class="timeline-bullets">
-                  <li>Developed a Generative AI image creation platform, <strong>shortening the prototyping cycle for the AUDI design team by weeks</strong> through automated visual concept generation.</li>
-                  <li>Architected generative workflows using AWS CDK and Docker, achieving a proven <strong>40% efficiency boost</strong> in image generation throughput.</li>
-                  <li>Engineered highly available FastAPI microservices handling thousands of daily API requests with <strong>>95% test coverage</strong> (Pytest).</li>
-                </ul>
-              </div>
-
-              <div class="sub-experience">
-                <h4><i class="fa-solid fa-chart-line"></i> Internal I&D Portfolio Development</h4>
-                <ul class="timeline-bullets">
-                  <li>Structured a <strong>multi-million Euro I&D portfolio</strong>, accelerating the delivery of new client-facing offerings for Go-To-Market strategies by <strong>25%</strong>.</li>
-                  <li>Executed data benchmarking via Python and Power Query, generating insights that strengthened client engagement in the Life Sciences sector.</li>
-                  <li>Translated over 15 complex technical AI offerings into clear business propositions to directly support C-level decision-making.</li>
-                </ul>
-              </div>
-              <div class="experience-tech-tags">
-                <span>FastAPI</span><span>AWS CDK</span><span>Docker</span><span>Generative AI</span><span>Pytest</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Item 3: University -->
-          <div class="timeline-item">
-            <div class="timeline-marker"><i class="fa-solid fa-graduation-cap"></i></div>
-            <div class="timeline-content glass-panel">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="role-title">Master of Science in Computer Science</h3>
-                  <div class="company-name">Albert-Ludwigs-Universität Freiburg</div>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-badge">Freiburg, Germany</span>
-                  <span class="timeline-date">Oct 2024 – Sep 2027 (Expected)</span>
-                </div>
-              </div>
-              <p class="education-details">
-                <strong>Key Coursework:</strong> Machine Learning, Foundations of Deep Learning, Deep Learning Lab, Trustworthy AI Seminar, Intelligent Embedded Systems, Wearable Computing, RNA Bioinformatics, Digital Health.
-              </p>
-              <div class="experience-tech-tags">
-                <span>Machine Learning</span><span>Distributed Systems</span><span>Bioinformatics</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Technical Skills Matrix -->
-    <section class="section skills-section" id="skills">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Toolbox</span>
-          <h2 class="section-title">Technical Skills & Technologies</h2>
-          <p class="section-subtitle">
-            Core proficiencies across programming, machine learning, data engineering, and DevOps.
-          </p>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-category glass-panel">
-            <div class="skill-cat-header">
-              <i class="fa-solid fa-code"></i>
-              <h3>Programming Languages</h3>
-            </div>
-            <div class="skill-pill-list">
-              <span class="skill-pill"><i class="fa-brands fa-python"></i> Python (Expert)</span>
-              <span class="skill-pill"><i class="fa-solid fa-database"></i> SQL (Advanced)</span>
-              <span class="skill-pill"><i class="fa-brands fa-js"></i> TypeScript / JS</span>
-              <span class="skill-pill"><i class="fa-solid fa-terminal"></i> Bash Scripting</span>
-              <span class="skill-pill"><i class="fa-solid fa-c"></i> C / C++</span>
-            </div>
-          </div>
-
-          <div class="skill-category glass-panel">
-            <div class="skill-cat-header">
-              <i class="fa-solid fa-brain"></i>
-              <h3>AI & Deep Learning</h3>
-            </div>
-            <div class="skill-pill-list">
-              <span class="skill-pill">PyTorch</span>
-              <span class="skill-pill">Hugging Face Transformers</span>
-              <span class="skill-pill">Large Language Models (LLMs)</span>
-              <span class="skill-pill">RAG & Vector DBs (Qdrant)</span>
-              <span class="skill-pill">Computer Vision (DINOv2, V-JEPA)</span>
-              <span class="skill-pill">Equivariant Graph Neural Nets (EGNN)</span>
-              <span class="skill-pill">Scikit-learn</span>
-              <span class="skill-pill">MLflow</span>
-            </div>
-          </div>
-
-          <div class="skill-category glass-panel">
-            <div class="skill-cat-header">
-              <i class="fa-solid fa-server"></i>
-              <h3>Data Systems & Streaming</h3>
-            </div>
-            <div class="skill-pill-list">
-              <span class="skill-pill">Databricks</span>
-              <span class="skill-pill">Apache Spark / PySpark</span>
-              <span class="skill-pill">Apache Kafka / Redpanda</span>
-              <span class="skill-pill">PostgreSQL</span>
-              <span class="skill-pill">Redis</span>
-              <span class="skill-pill">Pandas / NumPy</span>
-              <span class="skill-pill">Delta Lake</span>
-            </div>
-          </div>
-
-          <div class="skill-category glass-panel">
-            <div class="skill-cat-header">
-              <i class="fa-solid fa-cloud"></i>
-              <h3>Cloud, DevOps & Tools</h3>
-            </div>
-            <div class="skill-pill-list">
-              <span class="skill-pill"><i class="fa-brands fa-aws"></i> AWS (CDK, S3, EC2)</span>
-              <span class="skill-pill"><i class="fa-brands fa-docker"></i> Docker & Containers</span>
-              <span class="skill-pill">Kubernetes</span>
-              <span class="skill-pill">FastAPI</span>
-              <span class="skill-pill">GitHub Actions CI/CD</span>
-              <span class="skill-pill">Terraform</span>
-              <span class="skill-pill">Prometheus & Grafana</span>
-              <span class="skill-pill">Pytest & TDD</span>
-            </div>
-          </div>
-
-          <div class="skill-category glass-panel">
-            <div class="skill-cat-header">
-              <i class="fa-solid fa-dna"></i>
-              <h3>Bioinformatics & Life Sciences</h3>
-            </div>
-            <div class="skill-pill-list">
-              <span class="skill-pill">Scanpy (scRNA-seq)</span>
-              <span class="skill-pill">Cell2Sentence Tokenization</span>
-              <span class="skill-pill">RDKit (Cheminformatics)</span>
-              <span class="skill-pill">Biopython (PDB parsing)</span>
-              <span class="skill-pill">3D Cell Painting Analysis</span>
-              <span class="skill-pill">Wearable Sensor / IMU Processing</span>
-            </div>
-          </div>
-
-          <div class="skill-category glass-panel">
-            <div class="skill-cat-header">
-              <i class="fa-solid fa-language"></i>
-              <h3>Languages & Certifications</h3>
-            </div>
-            <div class="skill-pill-list">
-              <span class="skill-pill"><i class="fa-solid fa-earth-americas"></i> English (C1 Proficient)</span>
-              <span class="skill-pill"><i class="fa-solid fa-earth-europe"></i> German (B1 Intermediate)</span>
-              <span class="skill-pill"><i class="fa-solid fa-certificate"></i> AWS Cloud Foundations</span>
-              <span class="skill-pill"><i class="fa-solid fa-certificate"></i> Oracle Database Foundations</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Interactive Developer CLI Terminal -->
-    <section class="section terminal-section" id="terminal-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Interactive Shell</span>
-          <h2 class="section-title">Developer Console & Terminal</h2>
-          <p class="section-subtitle">
-            Prefer keyboard navigation? Query my portfolio directly via the simulated terminal prompt.
-          </p>
-        </div>
-
-        <div class="terminal-window glass-panel" id="terminal-window">
-          <div class="terminal-topbar">
-            <div class="terminal-dots">
-              <span class="terminal-dot close"></span>
-              <span class="terminal-dot minimize"></span>
-              <span class="terminal-dot expand"></span>
-            </div>
-            <div class="terminal-title">arav@freiburg-station: ~ (zsh)</div>
-            <div class="terminal-actions">
-              <button class="terminal-btn-small" id="terminal-clear-btn" title="Clear Terminal">Clear</button>
-            </div>
-          </div>
-
-          <div class="terminal-body" id="terminal-body">
-            <div class="terminal-output" id="terminal-output">
-              <div class="term-line banner">
-                <span class="accent-text">Welcome to Arav Mendiratta's Interactive Portfolio Shell (v2.6)</span><br>
-                Type <span class="cmd-highlight">help</span> to view available commands, or click any chip below:
-              </div>
-            </div>
-
-            <div class="terminal-prompt-row">
-              <span class="term-prompt"><span class="prompt-user">arav@freiburg</span>:<span class="prompt-dir">~</span>$</span>
-              <input type="text" id="terminal-input" class="terminal-input" placeholder="Type a command (e.g. 'help', 'projects', 'skills')..." autocomplete="off" spellcheck="false" />
-            </div>
-          </div>
-
-          <div class="terminal-suggestions">
-            <span class="sugg-label">Quick Commands:</span>
-            <button class="term-chip" data-cmd="help">help</button>
-            <button class="term-chip" data-cmd="about">about</button>
-            <button class="term-chip" data-cmd="projects">projects</button>
-            <button class="term-chip" data-cmd="skills">skills</button>
-            <button class="term-chip" data-cmd="research">research</button>
-            <button class="term-chip" data-cmd="thesis">thesis</button>
-            <button class="term-chip" data-cmd="contact">contact</button>
-            <button class="term-chip" data-cmd="clear">clear</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact & Collaboration Section -->
-    <section class="section contact-section" id="contact">
-      <div class="container">
-        <div class="contact-card glass-panel">
-          <div class="contact-content">
-            <span class="section-tag">Let's Connect</span>
-            <h2 class="contact-title">Seeking Collaborators for Master's Thesis & Engineering Roles</h2>
-            <p class="contact-text">
-              I am based in Düsseldorf / Freiburg (open to relocate or hybrid/remote). Whether you have 
-              an innovative research challenge in AI & Life Sciences, or an engineering role in high-throughput 
-              data systems, let's discuss how we can collaborate.
-            </p>
-
-            <div class="contact-methods">
-              <a href="mailto:arav.mendiratta1@gmail.com" class="contact-item" id="contact-email-link">
-                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-                <div>
-                  <div class="contact-item-label">Direct Email</div>
-                  <div class="contact-item-value">arav.mendiratta1@gmail.com</div>
-                </div>
-              </a>
-
-              <a href="https://www.linkedin.com/in/aravmendiratta/" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-linkedin-link">
-                <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
-                <div>
-                  <div class="contact-item-label">LinkedIn</div>
-                  <div class="contact-item-value">linkedin.com/in/aravmendiratta</div>
-                </div>
-              </a>
-
-              <a href="https://github.com/aravmendiratta" target="_blank" rel="noopener noreferrer" class="contact-item" id="contact-github-link">
-                <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
-                <div>
-                  <div class="contact-item-label">GitHub</div>
-                  <div class="contact-item-value">github.com/aravmendiratta</div>
-                </div>
-              </a>
-
-              <div class="contact-item">
-                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-                <div>
-                  <div class="contact-item-label">Phone</div>
-                  <div class="contact-item-value">+49 15510 134845</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="contact-cta-buttons">
-              <a href="mailto:arav.mendiratta1@gmail.com?subject=Collaboration%20Inquiry%20-%20Arav%20Mendiratta" class="btn btn-primary" id="btn-send-email">
-                <i class="fa-solid fa-paper-plane"></i> Send an Email
-              </a>
-              <a href="assets/Arav_Mendiratta_Resume.pdf" class="btn btn-secondary" id="btn-download-resume" target="_blank" download>
-                <i class="fa-solid fa-file-pdf"></i> Download Official CV (PDF)
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Project Details Modal -->
-  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog">
-    <div class="modal-dialog glass-panel" role="document">
-      <div class="modal-header">
-        <div class="modal-badge-wrapper">
-          <span class="modal-category" id="modal-category">Category</span>
-          <span class="modal-metric" id="modal-metric">Metric</span>
-        </div>
-        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
-      </div>
-
-      <div class="modal-body">
-        <h2 class="modal-title" id="modal-title">Project Title</h2>
-        <div class="modal-tags" id="modal-tags"></div>
-
-        <div class="modal-description" id="modal-description"></div>
-
-        <div class="modal-architecture-box">
-          <h3><i class="fa-solid fa-layer-group"></i> Architecture & Engineering Breakdown</h3>
-          <ul class="modal-architecture-list" id="modal-architecture-list"></ul>
-        </div>
-
-        <div class="modal-links" id="modal-links">
-          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="modal-repo-link">
-            <i class="fa-brands fa-github"></i> View GitHub Repository
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="modal-demo-link">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Live Link / Paper
-          </a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Toast Message -->
-  <div class="toast" id="toast">Command executed</div>
+  <!-- ========================================================================
+       ABOUT: Experience, Education & Languages
+       ======================================================================== -->
+      <!-- ========================================================================
+       EXPERIENCE & EDUCATION (2-Column Studio Notebook Layout)
+       ======================================================================== -->
+  <section class="sec wrap" id="about" aria-labelledby="about-title">
+    <p class="eyebrow" data-en="Career &amp; Background" data-de="Karriere &amp; Hintergrund">Career &amp; Background</p>
+    <div class="block-head">
+      <h2 id="about-title" data-en="Experience &amp; Education" data-de="Berufserfahrung &amp; Studium">Experience &amp; Education</h2>
+      <p data-en="based in Düsseldorf &amp; Freiburg, Germany · English &amp; German (B1)" data-de="in Düsseldorf &amp; Freiburg, Deutschland · Englisch &amp; Deutsch (B1)">based in Düsseldorf &amp; Freiburg, Germany · English &amp; German (B1)</p>
+    </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-left">
-        <p>© 2026 Arav Mendiratta. Built with semantic HTML, modern CSS & JavaScript. Ready for GitHub Pages.</p>
+    <div class="two-col">
+      <!-- Left: Experience Journey Rows -->
+      <div>
+        <div class="journey">
+          <!-- Role 1: Student Researcher at CRC 1597 Small Data -->
+          <div class="jr">
+            <div class="jr-time" data-en="May 2026 – Jul 2026" data-de="Mai 2026 – Jul 2026">May 2026 – Jul 2026</div>
+            <div>
+              <div class="jr-role" data-en="Student Researcher" data-de="Studentischer Forscher">Student Researcher</div>
+              <div class="jr-co" data-en="Collaborative Research Center 1597 “Small Data” · University of Freiburg" data-de="SFB 1597 „Small Data“ · Universität Freiburg">Collaborative Research Center 1597 “Small Data” · University of Freiburg</div>
+              <div class="jr-parts">
+                
+                <!-- Project 1.1: Single-Cell Genomics -->
+                <div class="jr-sub">
+                  <div class="jr-sub-header">
+                    <span class="jr-badge">Bioinformatics</span>
+                    <strong data-en="Single-Cell Genomics &amp; Sandhoff Disease Research" data-de="Einzelzell-Genomik &amp; Sandhoff-Krankheit Forschung">Single-Cell Genomics &amp; Sandhoff Disease Research</strong>
+                  </div>
+                  <p class="jr-sub-desc" data-en="Engineered an LLM representation learning pipeline using Cell2Sentence and ordinal relational embeddings to classify high-dimensional single-cell genomic profiles for rare neurodegenerative disease models." data-de="Entwicklung einer LLM-Repräsentationspipeline mit Cell2Sentence und ordinalen Einbettungen zur Klassifikation hochdimensionaler Einzelzell-Genomprofile für seltene neurodegenerative Krankheiten.">Engineered an LLM representation learning pipeline using Cell2Sentence and ordinal relational embeddings to classify high-dimensional single-cell genomic profiles for rare neurodegenerative disease models.</p>
+                  <div class="jr-tags">
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">PyTorch</span>
+                    <span class="tech-pill">HuggingFace</span>
+                    <span class="tech-pill">scRNA-seq</span>
+                    <span class="tech-pill">LLMOps</span>
+                    <span class="tech-pill">Guardrails</span>
+                  </div>
+                  <div class="jr-metric">
+                    <span class="metric-label" data-en="Key Outcome:" data-de="Ergebnis:">Key Outcome:</span>
+                    <span data-en="+35% classification accuracy on rare diseased cell states in Sandhoff disease models." data-de="+35 % Klassifikationsgenauigkeit für seltene Zellzustände bei Sandhoff-Krankheit.">+35% classification accuracy on rare diseased cell states in Sandhoff disease models.</span>
+                  </div>
+                </div>
+
+                <!-- Project 1.2: HPC Pipelines -->
+                <div class="jr-sub">
+                  <div class="jr-sub-header">
+                    <span class="jr-badge">HPC &amp; ML</span>
+                    <strong data-en="Automated HPC Workflows &amp; Scalable Pipelines" data-de="Automatisierte HPC-Workflows &amp; Skalierbare Pipelines">Automated HPC Workflows &amp; Scalable Pipelines</strong>
+                  </div>
+                  <p class="jr-sub-desc" data-en="Architected automated CI/CD workflows and distributed SLURM batch execution on Freiburg's high-performance computing cluster for scalable biological data processing." data-de="Architektur automatisierter CI/CD-Workflows und verteilter SLURM-Batch-Jobs auf dem Freiburger HPC-Cluster für skalierbare biologische Datenverarbeitung.">Architected automated CI/CD workflows and distributed SLURM batch execution on Freiburg's high-performance computing cluster for scalable biological data processing.</p>
+                  <div class="jr-tags">
+                    <span class="tech-pill">SLURM HPC</span>
+                    <span class="tech-pill">Linux / Bash</span>
+                    <span class="tech-pill">Docker</span>
+                    <span class="tech-pill">CI/CD</span>
+                    <span class="tech-pill">Distributed Training</span>
+                  </div>
+                  <div class="jr-metric">
+                    <span class="metric-label" data-en="Key Outcome:" data-de="Ergebnis:">Key Outcome:</span>
+                    <span data-en="Processed 10,000+ gene expression matrices with automated validation and zero pipeline downtime." data-de="Verarbeitung von über 10.000 Genexpressionsmatrizen mit automatischer Validierung ohne Ausfallzeiten.">Processed 10,000+ gene expression matrices with automated validation and zero pipeline downtime.</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2: Data Scientist Intern at Capgemini Germany -->
+          <div class="jr">
+            <div class="jr-time" data-en="Jun 2025 – Dec 2025" data-de="Jun 2025 – Dez 2025">Jun 2025 – Dec 2025</div>
+            <div>
+              <div class="jr-role" data-en="Data Scientist Intern" data-de="Data Scientist Praktikant">Data Scientist Intern</div>
+              <div class="jr-co" data-en="Capgemini Germany · Stuttgart &amp; Düsseldorf" data-de="Capgemini Deutschland · Stuttgart &amp; Düsseldorf">Capgemini Germany · Stuttgart &amp; Düsseldorf</div>
+              <div class="jr-parts">
+                
+                <!-- Project 2.1: AUDI GenAI -->
+                <div class="jr-sub">
+                  <div class="jr-sub-header">
+                    <span class="jr-badge">GenAI</span>
+                    <strong data-en="AUDI — Enterprise GenAI Visual Prototyping Platform" data-de="AUDI — Generative-KI-Plattform für visuelles Prototyping">AUDI — Enterprise GenAI Visual Prototyping Platform</strong>
+                  </div>
+                  <p class="jr-sub-desc" data-en="Co-developed a cloud-native GenAI platform with AUDI automotive designers, implementing custom LoRA adapters to preserve vehicle styling and accelerate concept generation." data-de="Co-Entwicklung einer Cloud-GenAI-Plattform mit AUDI-Designern; Implementierung von LoRA-Adaptern zur Wahrung des Fahrzeugdesigns und Beschleunigung der Konzeptphase.">Co-developed a cloud-native GenAI platform with AUDI automotive designers, implementing custom LoRA adapters to preserve vehicle styling and accelerate concept generation.</p>
+                  <div class="jr-tags">
+                    <span class="tech-pill">AWS CDK</span>
+                    <span class="tech-pill">Docker</span>
+                    <span class="tech-pill">FastAPI</span>
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">LoRA</span>
+                    <span class="tech-pill">PyTorch</span>
+                  </div>
+                  <div class="jr-metric">
+                    <span class="metric-label" data-en="Key Outcome:" data-de="Ergebnis:">Key Outcome:</span>
+                    <span data-en="Reduced prototyping cycles by weeks (+40% workflow efficiency) with 95%+ test coverage." data-de="Verkürzung der Prototyping-Zyklen um Wochen (+40 % Effizienz) bei über 95 % Testabdeckung.">Reduced prototyping cycles by weeks (+40% workflow efficiency) with 95%+ test coverage.</span>
+                  </div>
+                </div>
+
+                <!-- Project 2.2: Business Transformation -->
+                <div class="jr-sub">
+                  <div class="jr-sub-header">
+                    <span class="jr-badge">Transformation</span>
+                    <strong data-en="Insights &amp; Data — Business Transformation &amp; AI Proposals" data-de="Insights &amp; Data — Business Transformation &amp; KI-Angebote">Insights &amp; Data — Business Transformation &amp; AI Proposals</strong>
+                  </div>
+                  <p class="jr-sub-desc" data-en="Consulted within the Insights &amp; Data practice to analyze enterprise requirements, translating complex GenAI capabilities and data governance frameworks into strategic C-level proposals." data-de="Beratung im Insights &amp; Data Team zur Analyse von Kundenanforderungen; Übersetzung komplexer GenAI-Lösungen und Data-Governance-Konzepte in strategische C-Level-Entscheidungsvorlagen.">Consulted within the Insights &amp; Data practice to analyze enterprise requirements, translating complex GenAI capabilities and data governance frameworks into strategic C-level proposals.</p>
+                  <div class="jr-tags">
+                    <span class="tech-pill">GenAI Strategy</span>
+                    <span class="tech-pill">Data Governance</span>
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">Power Query</span>
+                    <span class="tech-pill">Proposal Architecture</span>
+                  </div>
+                  <div class="jr-metric">
+                    <span class="metric-label" data-en="Key Outcome:" data-de="Ergebnis:">Key Outcome:</span>
+                    <span data-en="Achieved 25% faster go-to-market turnaround on multi-million Euro proposals across 15+ offerings." data-de="25 % schnellere Angebotserstellung für Multi-Millionen-Euro-Projekte über 15+ Leistungsbereiche.">Achieved 25% faster go-to-market turnaround on multi-million Euro proposals across 15+ offerings.</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="footer-right">
-        <a href="#hero" class="back-to-top"><i class="fa-solid fa-arrow-up"></i> Top</a>
+
+      <!-- Right: Education & Languages Stack -->
+      <div class="edu-stack">
+        <div class="edu-card">
+          <div class="yr" data-en="Oct 2024 – Expected Apr 2027 · Freiburg, Germany" data-de="Okt 2024 – Vorauss. Apr 2027 · Freiburg, Deutschland">Oct 2024 – Expected Apr 2027 · Freiburg, Germany</div>
+          <h3 data-en="M.Sc. in Computer Science" data-de="M.Sc. in Informatik">M.Sc. in Computer Science</h3>
+          <p data-en="Albert-Ludwigs-Universität Freiburg — Focus on Artificial Intelligence, Bioinformatics, Deep Learning &amp; Data Systems." data-de="Albert-Ludwigs-Universität Freiburg — Schwerpunkt auf Künstlicher Intelligenz, Bioinformatik, Deep Learning &amp; Datensystemen.">Albert-Ludwigs-Universität Freiburg — Focus on Artificial Intelligence, Bioinformatics, Deep Learning &amp; Data Systems.</p>
+        </div>
+
+        <div class="edu-card">
+          <div class="yr" data-en="Sep 2020 – Jun 2024 · Chennai, India" data-de="Sep 2020 – Jun 2024 · Chennai, Indien">Sep 2020 – Jun 2024 · Chennai, India</div>
+          <h3 data-en="B.Tech. in Computer Science &amp; Engineering" data-de="B.Tech. in Informatik &amp; Ingenieurwesen">B.Tech. in Computer Science &amp; Engineering</h3>
+          <p data-en="SRM Institute of Science &amp; Technology — Focus on Machine Learning, Data Analytics &amp; Software Engineering." data-de="SRM Institute of Science &amp; Technology — Schwerpunkt auf Machine Learning, Datenanalyse &amp; Software Engineering.">SRM Institute of Science &amp; Technology — Focus on Machine Learning, Data Analytics &amp; Software Engineering.</p>
+        </div>
+
+        <div class="edu-card">
+          <div class="yr" data-en="Locations &amp; Languages" data-de="Standorte &amp; Sprachen">Locations &amp; Languages</div>
+          <h3 data-en="Düsseldorf &amp; Freiburg, Germany" data-de="Düsseldorf &amp; Freiburg, Deutschland">Düsseldorf &amp; Freiburg, Germany</h3>
+          <p data-en="English &amp; German (B1) · Hindi Native" data-de="Englisch &amp; Deutsch (B1) · Hindi Muttersprache">English &amp; German (B1) · Hindi Native</p>
+        </div>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <script src="app.js"></script>
+<!-- ========================================================================
+       PROJECTS: Domain-Sectioned Taped Studio Project Cards
+       ======================================================================== -->
+  <section class="sec wrap" id="work" aria-labelledby="work-title">
+    <p class="eyebrow" data-en="Selected Projects" data-de="Ausgewählte Projekte">Selected Projects</p>
+    <div class="block-head">
+      <h2 id="work-title" data-en="Projects" data-de="Projekte">Projects</h2>
+      <p data-en="grouped by domain — filter below or click any card to explore" data-de="nach Fachbereich sortiert — unten filtern oder Karte anklicken">grouped by domain — filter below or click any card to explore</p>
+    </div>
+
+    <!-- Domain Filter Bar -->
+    <div class="domain-bar" role="tablist" aria-label="Filter projects by domain">
+      <button type="button" class="d-pill active" data-filter="all" data-en="All Projects (8)" data-de="Alle Projekte (8)">All Projects (8)</button>
+      <button type="button" class="d-pill" data-filter="ai-bio" data-en="01 · Bioinformatics &amp; Health AI (3)" data-de="01 · Bioinformatik &amp; Health KI (3)">01 · Bioinformatics &amp; Health AI (3)</button>
+      <button type="button" class="d-pill" data-filter="data-systems" data-en="02 · GenAI &amp; Business Transformation (3)" data-de="02 · GenAI &amp; Business Transformation (3)">02 · GenAI &amp; Business Transformation (3)</button>
+      <button type="button" class="d-pill" data-filter="edge-ml" data-en="03 · Applied AI &amp; Vision (2)" data-de="03 · Angewandte KI &amp; Vision (2)">03 · Applied AI &amp; Vision (2)</button>
+    </div>
+
+    <!-- ======================================================================
+         DOMAIN 01: Bioinformatics & Healthcare AI
+         ====================================================================== -->
+    <div class="domain-group" id="domain-ai" data-domain="ai-bio">
+      <div class="domain-head">
+        <div class="domain-title">
+          <span class="domain-num">01</span>
+          <h3 data-en="Bioinformatics &amp; Healthcare AI" data-de="Bioinformatik &amp; Healthcare KI">Bioinformatics &amp; Healthcare AI</h3>
+        </div>
+        <span class="domain-sub" data-en="Genomic language models · 3D molecular AI · clinical GenAI" data-de="Genomische Sprachmodelle · 3D-Molekular-KI · Klinische GenAI">Genomic language models · 3D molecular AI · clinical GenAI</span>
+      </div>
+
+      <div class="wn-grid">
+        <!-- Card 1.1: Genomic Foundation Model -->
+        <article class="wn wn-blue" style="--r:-1.2deg;--tr:1.8deg">
+          <div class="wn-img" aria-hidden="true">
+            <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="320" height="200" fill="#F6FAFD"/>
+              <g fill="#7BB8E8">
+                <rect x="28" y="42" width="14" height="86" rx="2"/>
+                <rect x="48" y="58" width="14" height="70" rx="2"/>
+                <rect x="68" y="74" width="14" height="54" rx="2"/>
+                <rect x="88" y="90" width="14" height="38" rx="2"/>
+                <rect x="108" y="104" width="14" height="24" rx="2"/>
+              </g>
+              <path d="M134 86 h28" stroke="#282724" stroke-width="1.8" stroke-dasharray="3 3"/>
+              <polygon points="162,82 170,86 162,90" fill="#282724"/>
+              <g stroke="#282724" stroke-width="1.5" fill="#FBE48C">
+                <rect x="180" y="48" width="110" height="22" rx="4"/>
+                <rect x="180" y="78" width="110" height="22" rx="4" fill="#FAF9F6" stroke-dasharray="3 2"/>
+                <rect x="180" y="108" width="110" height="22" rx="4" fill="#D8F6E2"/>
+              </g>
+              <text x="235" y="63" text-anchor="middle" font-family="monospace" font-size="10" fill="#282724">Gene Profile</text>
+              <text x="235" y="93" text-anchor="middle" font-family="monospace" font-size="10" fill="#66625B">Transformer AI</text>
+              <text x="235" y="123" text-anchor="middle" font-family="monospace" font-size="10" fill="#282724">Bio Insights</text>
+              <text x="28" y="168" font-family="monospace" font-size="10" fill="#53504A">Bioinformatics · Language Models for Biology</text>
+            </svg>
+          </div>
+          <div class="wn-tag">2026 · Bioinformatics · PyTorch · Transformers</div>
+          <h4 data-en="Genomic Foundation Model" data-de="Genomisches Foundation-Modell">Genomic Foundation Model</h4>
+          <p data-en="Addresses rare disease diagnosis where sparse cell samples obscure critical biomarkers. Adapts transformer language models to convert single-cell gene expression matrices into structured biological representations (Cell2Sentence), achieving high-accuracy cell-type identification and automated disease pattern discovery." data-de="Löst die Herausforderung, seltene Krankheitsmuster in spärlichen Genomdaten zu erkennen. Passt Transformer-Sprachmodelle an Einzelzell-Expressionsdaten an (Cell2Sentence), um Zelltypen präzise zu klassifizieren und krankheitsrelevante Marker automatisch zu identifizieren.">Addresses rare disease diagnosis where sparse cell samples obscure critical biomarkers. Adapts transformer language models to convert single-cell gene expression matrices into structured biological representations (Cell2Sentence), achieving high-accuracy cell-type identification and automated disease pattern discovery.</p>
+          <div class="wn-foot">
+            <span data-en="Bioinformatics AI" data-de="Bioinformatik KI">Bioinformatics AI</span>
+            <div class="wn-links">
+              <a href="https://github.com/aravmendiratta/single_cell_foundation_model" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 1.2: Geometric Drug Discovery -->
+        <article class="wn wn-mint" style="--r:1.1deg;--tr:-2deg">
+          <div class="wn-img" aria-hidden="true">
+            <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="320" height="200" fill="#F5FBF7"/>
+              <g stroke="#282724" stroke-width="1.6">
+                <line x1="95" y1="95" x2="155" y2="55"/>
+                <line x1="155" y1="55" x2="215" y2="85"/>
+                <line x1="215" y1="85" x2="185" y2="135"/>
+                <line x1="95" y1="95" x2="185" y2="135" stroke-dasharray="4 3"/>
+                <line x1="155" y1="55" x2="185" y2="135" opacity=".4"/>
+              </g>
+              <circle cx="95" cy="95" r="14" fill="#AEEAC3" stroke="#282724" stroke-width="1.6"/>
+              <circle cx="155" cy="55" r="16" fill="#FBE48C" stroke="#282724" stroke-width="1.6"/>
+              <circle cx="215" cy="85" r="13" fill="#C9E4F8" stroke="#282724" stroke-width="1.6"/>
+              <circle cx="185" cy="135" r="12" fill="#F9CCE3" stroke="#282724" stroke-width="1.6"/>
+              <text x="155" y="59" text-anchor="middle" font-family="monospace" font-size="10" fill="#282724">3D</text>
+              <text x="28" y="168" font-family="monospace" font-size="10" fill="#53504A">3D Molecular Graph Neural Network</text>
+            </svg>
+          </div>
+          <div class="wn-tag">2026 · Graph Neural Networks · RDKit · PyTorch</div>
+          <h4 data-en="Geometric Drug Discovery" data-de="Geometrische Wirkstoffforschung">Geometric Drug Discovery</h4>
+          <p data-en="Tackles the slow, capital-intensive nature of physical assay testing in early-stage pharmacology. Implements an E(n)-equivariant 3D Graph Neural Network that models atomic geometry to predict chemical and drug-like binding properties, accelerating virtual screening pipelines by orders of magnitude." data-de="Überwindet die hohen Kosten und langen Zyklen traditioneller Labor-Screenings. Nutzt ein E(n)-äquivariantes 3D-Graph-Neural-Network zur direkten Analyse atomarer Geometrien, um Bindungsaffinitäten präzise vorherzusagen und die Wirkstoffsuche signifikant zu beschleunigen.">Tackles the slow, capital-intensive nature of physical assay testing in early-stage pharmacology. Implements an E(n)-equivariant 3D Graph Neural Network that models atomic geometry to predict chemical and drug-like binding properties, accelerating virtual screening pipelines by orders of magnitude.</p>
+          <div class="wn-foot">
+            <span data-en="Computational Biology" data-de="Computational Biology">Computational Biology</span>
+            <div class="wn-links">
+              <a href="https://github.com/aravmendiratta/Geometric_Drug_Discovery" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 1.3: Clinical Intelligence Platform (MedIntel) -->
+        <article class="wn wn-lavender" style="--r:-0.8deg;--tr:1.2deg">
+          <div class="wn-img" aria-hidden="true">
+            <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="320" height="200" fill="#F9F6FD"/>
+              <rect x="26" y="42" width="76" height="44" rx="5" fill="#E2D4F8" stroke="#282724" stroke-width="1.5"/>
+              <rect x="26" y="96" width="76" height="44" rx="5" fill="#C9E4F8" stroke="#282724" stroke-width="1.5"/>
+              <text x="64" y="68" text-anchor="middle" font-family="monospace" font-size="10" fill="#282724">Semantic</text>
+              <text x="64" y="122" text-anchor="middle" font-family="monospace" font-size="10" fill="#282724">Keyword</text>
+              <path d="M102 64 L138 86 M102 118 L138 96" stroke="#282724" stroke-width="1.5"/>
+              <rect x="138" y="70" width="66" height="42" rx="6" fill="#FBE48C" stroke="#282724" stroke-width="1.5"/>
+              <text x="171" y="95" text-anchor="middle" font-family="monospace" font-size="10" fill="#282724">GenAI RAG</text>
+              <path d="M204 91 L226 91" stroke="#282724" stroke-width="1.5"/>
+              <rect x="226" y="58" width="68" height="66" rx="6" fill="#D8F6E2" stroke="#282724" stroke-width="1.5"/>
+              <text x="260" y="88" text-anchor="middle" font-family="monospace" font-size="9.5" fill="#282724">Cited</text>
+              <text x="260" y="102" text-anchor="middle" font-family="monospace" font-size="9.5" fill="#282724">Summary</text>
+              <text x="28" y="168" font-family="monospace" font-size="10" fill="#53504A">Medical Literature Search &amp; GenAI Synthesis</text>
+            </svg>
+          </div>
+          <div class="wn-tag">2025 · Generative AI · RAG · Qdrant · FastAPI</div>
+          <h4 data-en="Clinical Intelligence Platform" data-de="Clinical Intelligence Plattform">Clinical Intelligence Platform</h4>
+          <p data-en="Solves information overload for researchers navigating complex, fragmented clinical literature. Combines hybrid dense/sparse vector retrieval with strict prompt guardrails to synthesize evidence-backed medical summaries with verifiable source citations and minimal hallucinations." data-de="Adressiert Informationsüberlastung durch unübersichtliche medizinische Fachliteratur. Kombiniert hybride Vektorsuche (Qdrant + BM25) mit strikten LLM-Guardrails, um evidenzbasierte Zusammenfassungen mit verifizierbaren Quellenangaben und minimaler Halluzination zu liefern.">Solves information overload for researchers navigating complex, fragmented clinical literature. Combines hybrid dense/sparse vector retrieval with strict prompt guardrails to synthesize evidence-backed medical summaries with verifiable source citations and minimal hallucinations.</p>
+          <div class="wn-foot">
+            <span data-en="Healthcare GenAI" data-de="Healthcare GenAI">Healthcare GenAI</span>
+            <div class="wn-links">
+              <a href="https://github.com/aravmendiratta/clinical-intelligence-platform" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         DOMAIN 02: Generative AI & Business Transformation
+         ====================================================================== -->
+    <div class="domain-group" id="domain-data" data-domain="data-systems">
+      <div class="domain-head">
+        <div class="domain-title">
+          <span class="domain-num">02</span>
+          <h3 data-en="Generative AI &amp; Business Transformation" data-de="Generative KI &amp; Business Transformation">Generative AI &amp; Business Transformation</h3>
+        </div>
+        <span class="domain-sub" data-en="Decision intelligence · financial data platforms · process analytics" data-de="Decision Intelligence · Finanzdaten-Plattformen · Prozessanalyse">Decision intelligence · financial data platforms · process analytics</span>
+      </div>
+
+      <div class="wn-grid">
+        <!-- Card 2.1: Workforce Intelligence Platform -->
+        <article class="wn wn-lavender" style="--r:-0.7deg;--tr:1.4deg">
+          <div class="wn-img" aria-hidden="true">
+            <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="320" height="200" fill="#F9F6FD"/>
+              <g stroke="#282724" stroke-width="1.5">
+                <rect x="42" y="50" width="90" height="16" rx="3" fill="#C9E4F8"/>
+                <rect x="42" y="76" width="136" height="16" rx="3" fill="#FBE48C"/>
+                <rect x="42" y="102" width="68" height="16" rx="3" fill="#D8F6E2"/>
+                <rect x="206" y="52" width="72" height="66" rx="6" fill="#FAF9F6"/>
+              </g>
+              <text x="242" y="84" text-anchor="middle" font-family="monospace" font-size="9.5" fill="#282724">SHAP</text>
+              <text x="242" y="98" text-anchor="middle" font-family="monospace" font-size="9.5" fill="#53504A">Drivers</text>
+              <text x="28" y="168" font-family="monospace" font-size="10" fill="#53504A">AI-Driven Business &amp; Workforce Planning</text>
+            </svg>
+          </div>
+          <div class="wn-tag">2025 · Predictive AI · NLP · SHAP · FastAPI</div>
+          <h4 data-en="Workforce Intelligence Platform" data-de="Workforce Intelligence Plattform">Workforce Intelligence Platform</h4>
+          <p data-en="Addresses reactive organizational planning by identifying hidden drivers of employee turnover before attrition occurs. Combines NLP sentiment classification with gradient-boosted trees and SHAP explainability to forecast quarterly workforce capacity and deliver actionable HR retention insights." data-de="Ersetzt reaktive Personalplanung durch frühzeitige Erkennung von Fluktuationsrisiken. Verbindet NLP-Sentimentanalysen mit prädiktiven ML-Modellen und SHAP-Erklärbarkeit, um Teamkapazitäten vorauszuberechnen und Handlungsempfehlungen für Entscheidungsträger abzuleiten.">Addresses reactive organizational planning by identifying hidden drivers of employee turnover before attrition occurs. Combines NLP sentiment classification with gradient-boosted trees and SHAP explainability to forecast quarterly workforce capacity and deliver actionable HR retention insights.</p>
+          <div class="wn-foot">
+            <span data-en="Business Transformation" data-de="Business Transformation">Business Transformation</span>
+            <div class="wn-links">
+              <a href="https://github.com/aravmendiratta/workforce-intelligence-platform" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2.2: Market Data Reliability & Streaming Platform -->
+        <article class="wn wn-butter" style="--r:1deg;--tr:-1.5deg">
+          <div class="wn-img" aria-hidden="true">
+            <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="320" height="200" fill="#FDFBF2"/>
+              <g stroke="#282724" stroke-width="1.5" fill="none">
+                <path d="M24 118 L58 102 L88 124 L124 72 L156 96 L192 54 L228 84 L262 48 L294 66" stroke-width="2"/>
+                <line x1="24" y1="138" x2="294" y2="138" stroke="#D6D1C7"/>
+              </g>
+              <circle cx="192" cy="54" r="6" fill="#E86F5A" stroke="#282724" stroke-width="1.5"/>
+              <rect x="160" y="24" width="76" height="20" rx="4" fill="#282724"/>
+              <text x="198" y="38" text-anchor="middle" font-family="monospace" font-size="9.5" fill="#FAF9F6">LIVE MONITOR</text>
+              <text x="28" y="168" font-family="monospace" font-size="10" fill="#53504A">Real-Time Data Quality &amp; Alerting</text>
+            </svg>
+          </div>
+          <div class="wn-tag">2026 · Kafka · PostgreSQL · Prometheus · Docker</div>
+          <h4 data-en="Market Data Operations Platform" data-de="Market Data Operations Plattform">Market Data Operations Platform</h4>
+          <p data-en="Mitigates costly trading execution risks caused by silent market data corruption or upstream feed drops. Streams tick-level order book feeds through Apache Kafka into automated schema validation and anomaly-detection engines, triggering live Prometheus alerts to ensure continuous pipeline reliability." data-de="Verhindert kostspielige Handelsfehler durch unbemerkte Dateninkonsistenzen oder Ausfälle von Kurs-Feeds. Verarbeitet Orderbuch-Streams über Kafka mit automatisierten Validierungs- und Anomalie-Checks und alarmiert in Echtzeit via Prometheus für maximale Pipeline-Integrität.">Mitigates costly trading execution risks caused by silent market data corruption or upstream feed drops. Streams tick-level order book feeds through Apache Kafka into automated schema validation and anomaly-detection engines, triggering live Prometheus alerts to ensure continuous pipeline reliability.</p>
+          <div class="wn-foot">
+            <span data-en="Data Operations" data-de="Data Operations">Data Operations</span>
+            <div class="wn-links">
+              <a href="https://github.com/aravmendiratta/Market-Data-Operations-Project-" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2.3: Cloud-Based FX Trading Analytics -->
+        <article class="wn wn-peach" style="--r:-1.3deg;--tr:1.4deg">
+          <div class="wn-img" aria-hidden="true">
+            <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="320" height="200" fill="#FDF8F3"/>
+              <g stroke="#282724" stroke-width="1.5">
+                <line x1="56" y1="48" x2="56" y2="128"/><rect x="48" y="68" width="16" height="38" fill="#D8F6E2"/>
+                <line x1="98" y1="56" x2="98" y2="134"/><rect x="90" y="76" width="16" height="40" fill="#F9CCE3"/>
+                <line x1="140" y1="40" x2="140" y2="118"/><rect x="132" y="54" width="16" height="44" fill="#D8F6E2"/>
+                <line x1="182" y1="34" x2="182" y2="110"/><rect x="174" y="48" width="16" height="36" fill="#D8F6E2"/>
+                <line x1="224" y1="52" x2="224" y2="126"/><rect x="216" y="66" width="16" height="38" fill="#FBE48C"/>
+                <line x1="266" y1="36" x2="266" y2="108"/><rect x="258" y="48" width="16" height="42" fill="#C9E4F8"/>
+              </g>
+              <text x="28" y="168" font-family="monospace" font-size="10" fill="#53504A">Cloud Foreign Exchange Risk &amp; Trend Engine</text>
+            </svg>
+          </div>
+          <div class="wn-tag">2025 · PySpark · Databricks · AWS</div>
+          <h4 data-en="Cloud FX Trading Analytics" data-de="Cloud FX Trading Analytics">Cloud FX Trading Analytics</h4>
+          <p data-en="Resolves high-latency bottlenecks when analyzing large-scale foreign-exchange tick data across multiple liquidity providers. Leverages PySpark on Databricks clusters to calculate intraday spread distributions and slippage analytics, delivering automated best-execution reporting for regulatory compliance." data-de="Beseitigt Performance-Engpässe bei der Analyse massiver Devisenkurs-Tick-Daten über mehrere Liquiditätspools. Verarbeitet Multi-Gigabyte-Datenströme mit PySpark auf Databricks-Clustern zur automatisierten Best-Execution-Analyse und Spread-Überwachung.">Resolves high-latency bottlenecks when analyzing large-scale foreign-exchange tick data across multiple liquidity providers. Leverages PySpark on Databricks clusters to calculate intraday spread distributions and slippage analytics, delivering automated best-execution reporting for regulatory compliance.</p>
+          <div class="wn-foot">
+            <span data-en="Financial Analytics" data-de="Finanzanalyse">Financial Analytics</span>
+            <div class="wn-links">
+              <a href="https://github.com/aravmendiratta/cloud-based-foreign-exchange-analytics" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         DOMAIN 03: Applied AI & Vision
+         ====================================================================== -->
+    <div class="domain-group" id="domain-edge" data-domain="edge-ml">
+      <div class="domain-head">
+        <div class="domain-title">
+          <span class="domain-num">03</span>
+          <h3 data-en="Applied AI &amp; Computer Vision" data-de="Angewandte KI &amp; Computer Vision">Applied AI &amp; Computer Vision</h3>
+        </div>
+        <span class="domain-sub" data-en="Wearable sensor AI · sports video understanding · automated visual inspection" data-de="Wearable-Sensor-KI · Sport-Videoanalyse · Visuelle Qualitätskontrolle">Wearable sensor AI · sports video understanding · automated visual inspection</span>
+      </div>
+
+      <div class="wn-grid">
+        <!-- Card 3.1: SSSL-HAR Wearable Activity Recognition -->
+        <article class="wn wn-lime" style="--r:-1deg;--tr:1.6deg">
+          <div class="wn-img" aria-hidden="true">
+            <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="320" height="200" fill="#F9FBF2"/>
+              <path d="M24 88 Q44 38, 64 88 T104 88 T144 88 T184 88 T224 88 T264 88 L294 88" fill="none" stroke="#282724" stroke-width="1.8"/>
+              <path d="M24 106 Q44 74, 64 106 T104 106 T144 106 T184 106 T224 106 T264 106" fill="none" stroke="#53504A" stroke-width="1.3" stroke-dasharray="3 3"/>
+              <rect x="196" y="34" width="92" height="24" rx="5" fill="#D8F6E2" stroke="#282724" stroke-width="1.4"/>
+              <text x="242" y="50" text-anchor="middle" font-family="monospace" font-size="9.5" fill="#282724">Wearable AI</text>
+              <text x="28" y="168" font-family="monospace" font-size="10" fill="#53504A">Human Activity Recognition from Smartwatches</text>
+            </svg>
+          </div>
+          <div class="wn-tag">2026 · PyTorch · Self-Supervised AI · Live Web App</div>
+          <h4 data-en="Wearable Activity Recognition" data-de="Wearable-Aktivitäts-Erkennung">Wearable Activity Recognition</h4>
+          <p data-en="Overcomes the bottleneck of costly manual sensor data labeling in pervasive health monitoring. Implements a self-supervised contrastive learning architecture (SSSL-HAR) trained on physics-based synthetic simulations, delivering 88.15% zero-shot classification accuracy across 12 physical activities on smartwatches." data-de="Löst das Problem aufwändiger manueller Datenannotation bei Wearable-Sensoren. Nutzt selbstüberwachtes Contrastive Learning (SSSL-HAR) auf physikbasierten Simulationen und erzielt 88,15 % Zero-Shot-Genauigkeit bei der Erkennung von 12 Alltagsaktivitäten auf Smartwatches.">Overcomes the bottleneck of costly manual sensor data labeling in pervasive health monitoring. Implements a self-supervised contrastive learning architecture (SSSL-HAR) trained on physics-based synthetic simulations, delivering 88.15% zero-shot classification accuracy across 12 physical activities on smartwatches.</p>
+          <div class="wn-foot">
+            <span data-en="Wearable Sensor AI" data-de="Wearable-KI">Wearable Sensor AI</span>
+            <div class="wn-links">
+              <a href="https://sssl-har-ui.vercel.app" target="_blank" rel="noopener" data-en="Live Demo ↗" data-de="Live-Demo ↗">Live Demo ↗</a>
+              <a href="https://github.com/aravmendiratta/SSSL_HAR" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3.2: Deep Learning Automated Table Tennis Referee -->
+        <article class="wn wn-pink" style="--r:1.2deg;--tr:-1.8deg">
+          <div class="wn-img" aria-hidden="true">
+            <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg">
+              <rect width="320" height="200" fill="#FDF6FA"/>
+              <line x1="34" y1="126" x2="286" y2="126" stroke="#282724" stroke-width="2.2"/>
+              <line x1="160" y1="98" x2="160" y2="126" stroke="#282724" stroke-width="2"/>
+              <path d="M48 76 Q112 32, 198 124 Q236 78, 276 92" fill="none" stroke="#E86F5A" stroke-width="2" stroke-dasharray="4 3"/>
+              <circle cx="122" cy="58" r="6" fill="#FBE48C" stroke="#282724" stroke-width="1.5"/>
+              <circle cx="198" cy="122" r="7" fill="#D8F6E2" stroke="#282724" stroke-width="1.5"/>
+              <text x="28" y="168" font-family="monospace" font-size="10" fill="#53504A">Real-Time Ball &amp; Player Pose Tracking</text>
+            </svg>
+          </div>
+          <div class="wn-tag">2025 · PyTorch · DINOv2 · Video AI</div>
+          <h4 data-en="Automated Table Tennis Referee" data-de="KI-Tischtennis-Schiedsrichter">Automated Table Tennis Referee</h4>
+          <p data-en="Eliminates human adjudication errors during fast-paced 120+ fps table tennis rallies where edge and net contacts occur in milliseconds. Deploys deep learning tracking with DINOv2 visual features and spatial trajectory modeling to detect bounce contacts and automate point scoring in real time." data-de="Behebt menschliche Fehlentscheidungen in rasanten 120fps-Tischtennis-Matches, bei denen Kanten- und Netzbälle im Millisekundenbereich entschieden werden. Kombiniert DINOv2-Bildmerkmale mit räumlicher Trajektorienanalyse zur automatischen Echtzeit-Punktezählung.">Eliminates human adjudication errors during fast-paced 120+ fps table tennis rallies where edge and net contacts occur in milliseconds. Deploys deep learning tracking with DINOv2 visual features and spatial trajectory modeling to detect bounce contacts and automate point scoring in real time.</p>
+          <div class="wn-foot">
+            <span data-en="Sports Vision" data-de="Sport-Vision">Sports Vision</span>
+            <div class="wn-links">
+              <a href="https://docs.google.com/presentation/d/1SoIuDp2XWWY6JBRJQE6oJZemcqlin-PTChuGxmIjwJ8/edit?usp=sharing" target="_blank" rel="noopener" data-en="Slides ↗" data-de="Präsentation ↗">Slides ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       RESEARCH & SEMINARS
+       ======================================================================== -->
+  <section class="sec wrap" id="research" aria-labelledby="res-title">
+    <p class="eyebrow" data-en="Academic Work" data-de="Wissenschaftliche Arbeit">Academic Work</p>
+    <div class="block-head">
+      <h2 id="res-title" data-en="Research &amp; Seminars" data-de="Forschung &amp; Seminare">Research &amp; Seminars</h2>
+      <p data-en="bioinformatics, generative AI &amp; explainable deep learning" data-de="Bioinformatik, Generative KI &amp; erklärbares Deep Learning">bioinformatics, generative AI &amp; explainable deep learning</p>
+    </div>
+
+    <div class="res-grid">
+      <!-- 1. Research Project -->
+      <article class="res-card">
+        <div>
+          <div class="res-type-row">
+            <span class="res-type-pill pill-project" data-en="Research Project" data-de="Forschungsprojekt">Research Project</span>
+            <span class="res-meta-year">2026</span>
+          </div>
+          <div class="res-meta" data-en="Collaborative Research Center 1597 “Small Data” · Uni Freiburg" data-de="SFB 1597 „Small Data“ · Universität Freiburg">Collaborative Research Center 1597 “Small Data” · Uni Freiburg</div>
+          <h3 data-en="LLM-Powered Bioinformatics &amp; Genomic Embeddings" data-de="LLM-gestützte Bioinformatik &amp; Genomische Embeddings">LLM-Powered Bioinformatics &amp; Genomic Embeddings</h3>
+          <p data-en="Built an LLM-driven bioinformatics pipeline formatting over 10,000 gene expression profiles into structured representations (Cell2Sentence) to improve rare cell-type classification." data-de="Entwicklung einer LLM-gestützten Bioinformatik-Pipeline zur Strukturierung von über 10.000 Genexpressionsprofilen (Cell2Sentence) für eine präzisere Zelltyp-Klassifikation.">Built an LLM-driven bioinformatics pipeline formatting over 10,000 gene expression profiles into structured representations (Cell2Sentence) to improve rare cell-type classification.</p>
+          <div class="res-tags">
+            <span class="tech-pill">Single-Cell Genomics</span>
+            <span class="tech-pill">Cell2Sentence</span>
+            <span class="tech-pill">LLMOps</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. Master's Seminar -->
+      <article class="res-card">
+        <div>
+          <div class="res-type-row">
+            <span class="res-type-pill pill-seminar" data-en="Master's Seminar" data-de="Master-Seminar">Master's Seminar</span>
+            <span class="res-meta-year">Feb 2026</span>
+          </div>
+          <div class="res-meta" data-en="Master Seminar: Trustworthy AI · Uni Freiburg" data-de="Master-Seminar: Trustworthy AI · Uni Freiburg">Master Seminar: Trustworthy AI · Uni Freiburg</div>
+          <h3 data-en="Grad-CAMO: Visual Explainability in 3D Cell Painting" data-de="Grad-CAMO: Visuelle Erklärbarkeit in 3D Cell Painting">Grad-CAMO: Visual Explainability in 3D Cell Painting</h3>
+          <p data-en="Investigated how deep learning models attend to biological cell morphology versus background noise in image-based drug discovery." data-de="Untersuchung der visuellen Aufmerksamkeit tiefer neuronaler Netze bei zellbiologischen Bilddaten in der Wirkstoffforschung.">Investigated how deep learning models attend to biological cell morphology versus background noise in image-based drug discovery.</p>
+          <div class="res-tags">
+            <span class="tech-pill">Explainable AI</span>
+            <span class="tech-pill">Computer Vision</span>
+            <span class="tech-pill">Drug Discovery</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. Technical Reproduction & Master's Seminar -->
+      <article class="res-card">
+        <div>
+          <div class="res-type-row">
+            <div class="res-pills-group">
+              <span class="res-type-pill pill-seminar" data-en="Master's Seminar" data-de="Master-Seminar">Master's Seminar</span>
+              <span class="res-type-pill pill-repro" data-en="Technical Reproduction" data-de="Technische Reproduktion">Technical Reproduction</span>
+            </div>
+            <span class="res-meta-year">Aug 2026</span>
+          </div>
+          <div class="res-meta" data-en="Master Seminar: Intelligent Embedded Systems · Uni Freiburg" data-de="Master-Seminar: Intelligent Embedded Systems · Uni Freiburg">Master Seminar: Intelligent Embedded Systems · Uni Freiburg</div>
+          <h3 data-en="SSSL-HAR: Self-Supervised Wearable Activity Recognition" data-de="SSSL-HAR: Selbstüberwachte Wearable-Aktivitätserkennung">SSSL-HAR: Self-Supervised Wearable Activity Recognition</h3>
+          <p data-en="Reproduced a physics-based synthetic sensor simulation and contrastive learning pipeline, achieving 88.15% zero-shot accuracy on PAMAP2." data-de="Reproduktion einer physikbasierten Sensorsimulation und Contrastive-Learning-Pipeline mit 88,15 % Zero-Shot-Genauigkeit auf PAMAP2.">Reproduced a physics-based synthetic sensor simulation and contrastive learning pipeline, achieving 88.15% zero-shot accuracy on PAMAP2.</p>
+          <div class="res-tags">
+            <span class="tech-pill">Self-Supervised Learning</span>
+            <span class="tech-pill">Sensor Simulation</span>
+            <span class="tech-pill">PAMAP2 Benchmark</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. Conference Presentation -->
+      <article class="res-card">
+        <div>
+          <div class="res-type-row">
+            <span class="res-type-pill pill-conf" data-en="Conference Presentation" data-de="Konferenzvortrag">Conference Presentation</span>
+            <span class="res-meta-year">May 2024</span>
+          </div>
+          <div class="res-meta" data-en="Conference Presentation · ICRCET-2024" data-de="Konferenzvortrag · ICRCET-2024">Conference Presentation · ICRCET-2024</div>
+          <h3 data-en="Tomato Crop Pathology Assessment Using Computer Vision" data-de="Pflanzenkrankheitserkennung mittels Computer Vision">Tomato Crop Pathology Assessment Using Computer Vision</h3>
+          <p data-en="Presented a dual-stream convolutional neural network diagnosing 10 agricultural disease classes across 16,011 plant images at ICRCET-2024." data-de="Vortrag über ein Dual-Stream-CNN zur Diagnose von 10 Pflanzenkrankheiten auf 16.011 Bildern auf der Konferenz ICRCET-2024.">Presented a dual-stream convolutional neural network diagnosing 10 agricultural disease classes across 16,011 plant images at ICRCET-2024.</p>
+          <div class="res-tags">
+            <span class="tech-pill">Computer Vision</span>
+            <span class="tech-pill">CNNs</span>
+            <span class="tech-pill">Agricultural AI</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       LICENSES & CERTIFICATIONS
+       ======================================================================== -->
+  <section class="sec wrap" id="certifications" aria-labelledby="cert-title">
+    <p class="eyebrow" data-en="Credentials &amp; Qualifications" data-de="Qualifikationen &amp; Lizenzen">Credentials &amp; Qualifications</p>
+    <div class="block-head">
+      <h2 id="cert-title" data-en="Licenses &amp; Certifications" data-de="Zertifikate &amp; Lizenzen">Licenses &amp; Certifications</h2>
+      <p data-en="verified industry credentials, cloud architectures &amp; specialized programs" data-de="verifizierte Branchenzertifikate, Cloud-Architekturen &amp; Spezialprogramme">verified industry credentials, cloud architectures &amp; specialized programs</p>
+    </div>
+
+    <div class="cert-grid">
+      <!-- 1. AWS Academy Cloud Foundations -->
+      <article class="cert-card">
+        <div>
+          <div class="cert-header">
+            <span class="cert-issuer">Amazon Web Services</span>
+            <span class="cert-badge" data-en="Verified" data-de="Verifiziert">Verified</span>
+          </div>
+          <h3 data-en="AWS Academy Cloud Foundations" data-de="AWS Academy Cloud Foundations">AWS Academy Cloud Foundations</h3>
+          <div class="cert-date" data-en="Issued Nov 2022" data-de="Ausgestellt Nov 2022">Issued Nov 2022</div>
+          <p data-en="Mastery of cloud computing fundamentals, global AWS cloud architecture, security compliance (IAM, VPC), core services (EC2, S3, RDS), and cost optimization." data-de="Fundierte Kenntnisse der AWS-Cloud-Architektur, Sicherheits- und IAM-Konzepte, Core Services (EC2, S3, RDS, VPC) sowie Kostenoptimierung im Cloud-Betrieb.">Mastery of cloud computing fundamentals, global AWS cloud architecture, security compliance (IAM, VPC), core services (EC2, S3, RDS), and cost optimization.</p>
+        </div>
+        <div class="cert-tags">
+          <span class="tech-pill">AWS Cloud</span>
+          <span class="tech-pill">EC2 / S3</span>
+          <span class="tech-pill">IAM &amp; VPC</span>
+          <span class="tech-pill">Cloud Security</span>
+        </div>
+      </article>
+
+      <!-- 2. McKinsey Forward Program -->
+      <article class="cert-card">
+        <div>
+          <div class="cert-header">
+            <span class="cert-issuer">McKinsey &amp; Company</span>
+            <span class="cert-badge" data-en="Credential" data-de="Zertifikat">Credential</span>
+          </div>
+          <h3 data-en="McKinsey Forward Program" data-de="McKinsey Forward Programm">McKinsey Forward Program</h3>
+          <div class="cert-date" data-en="Issued Dec 2025 · ID: McKinsey.orgForward20251216" data-de="Ausgestellt Dez 2025 · ID: McKinsey.orgForward20251216">Issued Dec 2025 · ID: McKinsey.orgForward20251216</div>
+          <p data-en="Practical business leadership program developing structured problem-solving, digital adaptability, business resilience, data-driven decision making, and agile design thinking." data-de="Führungskräfteprogramm mit Fokus auf strukturierte Problemlösung, digitale Transformation, Resilienz und datengetriebene Entscheidungsfindung in agilen Teams.">Practical business leadership program developing structured problem-solving, digital adaptability, business resilience, data-driven decision making, and agile design thinking.</p>
+        </div>
+        <div class="cert-tags">
+          <span class="tech-pill">Business Strategy</span>
+          <span class="tech-pill">Leadership</span>
+          <span class="tech-pill">Problem Solving</span>
+          <span class="tech-pill">Digital Agility</span>
+        </div>
+      </article>
+
+      <!-- 3. Oracle Database Foundations -->
+      <article class="cert-card">
+        <div>
+          <div class="cert-header">
+            <span class="cert-issuer">Oracle Academy</span>
+            <span class="cert-badge" data-en="Database" data-de="Datenbank">Database</span>
+          </div>
+          <h3 data-en="Oracle Database Foundations" data-de="Oracle Database Foundations">Oracle Database Foundations</h3>
+          <div class="cert-date" data-en="Issued Mar 2023" data-de="Ausgestellt März 2023">Issued Mar 2023</div>
+          <p data-en="Relational database design, Entity-Relationship (ER) modeling, normalization, complex SQL querying (DDL, DML, DCL), ACID transaction controls, and indexing strategies." data-de="Relationales Datenbankdesign, Entity-Relationship (ER)-Modellierung, Normalisierung, fortgeschrittene SQL-Abfragen (DDL/DML), Transaktionsmanagement und Indexierung.">Relational database design, Entity-Relationship (ER) modeling, normalization, complex SQL querying (DDL, DML, DCL), ACID transaction controls, and indexing strategies.</p>
+        </div>
+        <div class="cert-tags">
+          <span class="tech-pill">SQL</span>
+          <span class="tech-pill">Relational DB</span>
+          <span class="tech-pill">ER Modeling</span>
+          <span class="tech-pill">Database Design</span>
+        </div>
+      </article>
+
+      <!-- 4. IBM Data Science Professional -->
+      <article class="cert-card">
+        <div>
+          <div class="cert-header">
+            <span class="cert-issuer">IBM · Coursera</span>
+            <span class="cert-badge" data-en="Data Science" data-de="Data Science">Data Science</span>
+          </div>
+          <h3 data-en="IBM Data Science Professional" data-de="IBM Data Science Professional">IBM Data Science Professional</h3>
+          <div class="cert-date" data-en="Issued 2023" data-de="Ausgestellt 2023">Issued 2023</div>
+          <p data-en="End-to-end data science methodology, exploratory data analysis, predictive statistical modeling, machine learning pipelines, and interactive data visualization with Python." data-de="Data-Science-Methodik, explorative Datenanalyse, prädiktive statistische Modellierung und Machine-Learning-Pipelines mit Python und Jupyter-Ökosystemen.">End-to-end data science methodology, exploratory data analysis, predictive statistical modeling, machine learning pipelines, and interactive data visualization with Python.</p>
+        </div>
+        <div class="cert-tags">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Data Science</span>
+          <span class="tech-pill">ML Pipelines</span>
+          <span class="tech-pill">Predictive Analytics</span>
+        </div>
+      </article>
+
+      <!-- 5. Cisco Introduction to Cybersecurity -->
+      <article class="cert-card">
+        <div>
+          <div class="cert-header">
+            <span class="cert-issuer">Cisco Networking Academy</span>
+            <span class="cert-badge" data-en="Security" data-de="Sicherheit">Security</span>
+          </div>
+          <h3 data-en="Introduction to Cybersecurity" data-de="Einführung in Cybersecurity">Introduction to Cybersecurity</h3>
+          <div class="cert-date" data-en="Issued Aug 2023 · ID: Badge20230801" data-de="Ausgestellt Aug 2023 · ID: Badge20230801">Issued Aug 2023 · ID: Badge20230801</div>
+          <p data-en="Threat landscape analysis, common attack vectors, network defense vulnerabilities, cryptography fundamentals, data privacy compliance, and mitigation protocols." data-de="Bedrohungsanalyse, Netzwerkangriffsvektoren, Grundlagen der Kryptographie, Datenschutz-Compliance und Sicherheitsprotokolle zur Netzwerkverteidigung.">Threat landscape analysis, common attack vectors, network defense vulnerabilities, cryptography fundamentals, data privacy compliance, and mitigation protocols.</p>
+        </div>
+        <div class="cert-tags">
+          <span class="tech-pill">Cybersecurity</span>
+          <span class="tech-pill">Network Defense</span>
+          <span class="tech-pill">Cryptography</span>
+          <span class="tech-pill">Threat Analysis</span>
+        </div>
+      </article>
+
+      <!-- 6. SAP Exploring End-to-End Business Scenarios -->
+      <article class="cert-card">
+        <div>
+          <div class="cert-header">
+            <span class="cert-issuer">SAP</span>
+            <span class="cert-badge" data-en="Enterprise" data-de="Enterprise">Enterprise</span>
+          </div>
+          <h3 data-en="Exploring End-to-End Business Scenarios" data-de="End-to-End Business Scenarios">Exploring End-to-End Business Scenarios</h3>
+          <div class="cert-date" data-en="Issued Aug 2026" data-de="Ausgestellt Aug 2026">Issued Aug 2026</div>
+          <p data-en="Integrated enterprise resource planning (ERP), digital supply chain orchestration, business process intelligence, and cross-functional data-driven workflows." data-de="Integriertes Enterprise Resource Planning (ERP), digitale Supply-Chain-Orchestrierung und cross-funktionale, datengetriebene Geschäftsprozesse.">Integrated enterprise resource planning (ERP), digital supply chain orchestration, business process intelligence, and cross-functional data-driven workflows.</p>
+        </div>
+        <div class="cert-tags">
+          <span class="tech-pill">SAP ERP</span>
+          <span class="tech-pill">Digital Supply Chain</span>
+          <span class="tech-pill">Business Scenarios</span>
+          <span class="tech-pill">Workflows</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==========================================================================
+     FOOTER + Interactive Studio Receipt
+     ========================================================================== -->
+<footer class="wrap">
+  <div class="ft">
+    <div>
+      <p class="eyebrow" data-en="Say Hello" data-de="Kontakt">Say Hello</p>
+      <h2 class="ft-big" data-en="Let’s build together." data-de="Lass uns zusammenarbeiten.">Let’s build together.</h2>
+      <p class="ft-sub" data-en="Have an interesting problem, an ambitious idea, or just want to talk about AI? I'd love to hear from you." data-de="Hast du ein spannendes Problem, eine ambitionierte Idee oder möchtest dich einfach über KI austauschen? Ich freue mich, von dir zu hören.">Have an interesting problem, an ambitious idea, or just want to talk about AI? I'd love to hear from you.</p>
+      <div class="ft-cta">
+        <a class="ft-pill primary" href="mailto:arav.mendiratta1@gmail.com">arav.mendiratta1@gmail.com ↗</a>
+        <a class="ft-pill" href="https://github.com/aravmendiratta" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="ft-pill" href="https://www.linkedin.com/in/aravmendiratta/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="ft-pill" href="assets/Arav_Mendiratta_Resume.pdf" target="_blank" rel="noopener" data-en="Resume PDF ↗" data-de="Lebenslauf PDF ↗">Resume PDF ↗</a>
+      </div>
+    </div>
+
+    <!-- Interactive Studio Receipt -->
+    <div class="rcpt" data-mode="work" aria-label="Arav's studio receipt">
+      <div class="rcpt-paper">
+        <div class="rc-head">
+          <span>ARAV’S STUDIO RECEIPT</span>
+          <span>#2026</span>
+        </div>
+        <div class="rc-tabs" role="group" aria-label="Receipt mode">
+          <button type="button" data-mode="work" aria-pressed="true">[ focus ]</button>
+          <button type="button" data-mode="off" aria-pressed="false">[ off-duty ]</button>
+        </div>
+        <div class="rc-body">
+          <hr>
+          <p class="rc-h">Generative AI for business transformation &amp; bioinformatics.</p>
+          <hr>
+          <ul class="rc-items">
+            <li><span>Generative AI &amp; LLMs</span><i></i><span>x1</span></li>
+            <li><span>Business Transformation</span><i></i><span>x1</span></li>
+            <li><span>Bioinformatics &amp; Health AI</span><i></i><span>x1</span></li>
+          </ul>
+          <p class="rc-total"><span>ENGLISH + A LIL GERMAN</span><span>DUS · FR</span></p>
+        </div>
+        <div class="rc-foot">
+          <span class="rc-bars" aria-hidden="true"></span>
+          <span data-en="click receipt to flip mode · düsseldorf &amp; freiburg" data-de="Kassenbon anklicken zum Wechseln · Düsseldorf &amp; Freiburg">click receipt to flip mode · düsseldorf &amp; freiburg</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ft-bottom">
+    <span data-en="Arav Mendiratta © 2026 · Düsseldorf &amp; Freiburg, Germany" data-de="Arav Mendiratta © 2026 · Düsseldorf &amp; Freiburg, Deutschland">Arav Mendiratta © 2026 · Düsseldorf &amp; Freiburg, Germany</span>
+    <button type="button" class="ft-top" id="backToTop" data-en="Back to top ↑" data-de="Nach oben ↑">Back to top ↑</button>
+  </div>
+</footer>
+
+<script src="app.js"></script>
 </body>
 </html>

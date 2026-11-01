@@ -1,68 +1,55 @@
-# Arav Mendiratta — Developer Portfolio Website (`aravmendiratta.github.io`)
+# Arav Mendiratta — Portfolio (`aravmendiratta.github.io`)
 
-[![GitHub Pages Deployment](https://img.shields.io/badge/Deploy-GitHub_Pages-10b981?style=for-the-badge&logo=github)](https://aravmendiratta.github.io/)
-[![Tech Stack](https://img.shields.io/badge/Tech-HTML5_|_CSS3_|_JavaScript-06b6d4?style=for-the-badge)](https://developer.mozilla.org/)
+Minimalist, Swiss-grid engineering & research portfolio for **Arav Mendiratta** — M.Sc. Computer Science researcher and AI systems engineer at **Albert-Ludwigs-Universität Freiburg**.
 
-An interactive, high-performance developer portfolio showcasing my work in Machine Learning, Distributed Streaming Systems, and Computational Biology.
-
----
-
-## ⚡ Key Highlights
-- **Zero-Build Architecture:** Pure Semantic HTML5, Vanilla CSS3 (Custom Design System with Glassmorphism), and Vanilla ES6+ JavaScript.
-- **Instant GitHub Pages Ready:** Includes `.nojekyll` and static routing.
-- **Root Domain Hosting:** Configured for `aravmendiratta.github.io`.
-- **Interactive Project Deep Dives:** Modal architectural breakdowns for all 7 engineering platforms.
-- **Developer CLI Terminal:** An interactive shell allowing recruiters to type commands (`help`, `projects`, `skills`, `research`, `thesis`, `contact`, `theme`, `clear`).
-- **Cybernetic Theme System:** Sleek Dark Mode (Default) + High-Contrast Light Mode with local storage persistence.
-- **Responsive:** Mobile-first layout with smooth micro-animations and background particle constellation canvas.
+**Live Site:** [https://aravmendiratta.github.io](https://aravmendiratta.github.io)
 
 ---
 
-## 🚀 How to Run Locally
+## Overview
 
-No dependencies or node_modules required! Simply serve the directory using any static file server:
+Designed around **The Quiet Instrument** aesthetic direction (`Archivo` typography + `Three stones` warm stone palette):
+- **Zero visual bloat:** No decorative gradients, neon glows, glassmorphism, or artificial stock chrome. Surfaces are separated strictly by architectural grid rhythm and stone tone steps (`#eeecea`, `#e4e1dd`, `#cdc3b6`).
+- **Interactive Engineering Instruments:**
+  - **Live Benchmark Readout:** Switch between *Single-Cell LLMs*, *Streaming Engines*, and *Geometric & Edge ML* telemetry in the hero console.
+  - **Interactive Systems Ledger (11 Projects):** Filter by domain (*Streaming & Data*, *AI & Life Sciences*, *Edge & Applied ML*) and inspect full Problem → Solution → Impact specifications and verified links.
+  - **CRC 1597 `scTriplets` Benchmark Explorer:** Interactive comparison of Student-t Stochastic Triplet Embedding (`t-STE`) vs. 50-d PCA (`scIB ASW 0.693 vs 0.576`, `0.748` peak HVG run), Two-Pass Consensus positional debiasing (`Subclass ARI 0.827`), and HVG vocabulary ablations (`k=500`).
 
-### Option 1: Python
+---
+
+## Featured Systems & Research
+
+### Experience
+- **Student Researcher — Collaborative Research Center 1597 "Small Data" (University of Freiburg)** *(May 2026 – July 2026)*
+  - Study Project: *LLM-Judged Triplets to Generate Ordinal Embeddings of Single-Cell RNA-Sequencing Data* (PI: Prof. Dr. Harald Binder, Supervisor: Niklas Brunn).
+- **Data Scientist (Working Student / Werkstudent) — Capgemini Germany (Stuttgart)** *(June 2025 – Dec 2025)*
+  - Co-developed an enterprise generative AI visual prototyping platform for **AUDI AG** (diffusion models, custom LoRA adapters, AWS CDK/S3/EC2, FastAPI microservices with 95%+ Pytest coverage) and benchmarked 15+ Life Sciences & Telecom AI offerings.
+
+### Selected Systems & Open-Source Repositories
+1. **[Market Data Reliability & Streaming Platform](https://github.com/aravmendiratta/Market-Data-Operations-Project-)** — Kafka/Redpanda, PostgreSQL, Redis, Docker, Prometheus (`>25,000 msg/s` sustained tick ingestion, deterministic fault injection, 5D Data Quality Engine, microsecond L2 order book rebuild).
+2. **[Cloud-Based FX Trading Analytics Engine](https://github.com/aravmendiratta/cloud-based-foreign-exchange-analytics)** — PySpark Structured Streaming, Databricks Lakehouse, AWS S3, Delta Lake (`10M+` L2 FX tick records, sliding/tumbling window VWAP, automated MiFID II compliance auditing).
+3. **[Geometric Drug Discovery (E(3) Equivariant GNN)](https://github.com/aravmendiratta/Geometric_Drug_Discovery)** — PyTorch, RDKit, Biopython (rototranslation-equivariant message passing over raw 3D `.pdb` and `.sdf` atomic coordinates).
+4. **[Single-Cell Foundation Model (Cell2Sentence MLM)](https://github.com/aravmendiratta/single_cell_foundation_model)** — PyTorch, Hugging Face Transformers, Scanpy (`10,000+` scRNA-seq profiles, `+35%` rare cell-type classification recall).
+5. **[Clinical Intelligence Platform (MedIntel RAG)](https://github.com/aravmendiratta/clinical-intelligence-platform)** — FastAPI (Clean Architecture), React, Qdrant, OpenAI, SSE (`50,000+` clinical documents, `>85%` hallucination reduction, `-40%` perceived latency).
+6. **[SSSL-HAR: Self-Supervised Wearable Activity Recognition](https://github.com/aravmendiratta/SSSL_HAR)** ([Live Demo](https://sssl-har-ui.vercel.app)) — PyTorch, 1D-CNN, InfoNCE Contrastive Learning (`88.15%` zero-shot transfer accuracy on PAMAP2).
+7. **[Deep Learning Automated Table Tennis Referee](https://docs.google.com/presentation/d/1SoIuDp2XWWY6JBRJQE6oJZemcqlin-PTChuGxmIjwJ8/edit?usp=sharing)** — PyTorch, Meta DINOv2, Meta V-JEPA, Bidirectional GRU, custom Temporal Window Loss solving 3–7s human operator lag across 120fps rally video.
+8. **SteelSurface-Vision: Edge Defect Inspection & Digital Twin** — C++17 Zero-Copy Ring Buffer, PyTorch, TensorRT FP16, ONNX Runtime, FastAPI WebSockets (`+22% mAP@50` on NEU-DET/GC10-DET, `95 FPS` at `<12ms p99` latency).
+9. **FabricFlow: Plant Process Intelligence Lakehouse** — Microsoft Fabric, OneLake, PySpark Medallion Architecture, Power BI Direct Lake & DAX (`4h to <3m` pipeline latency, `-18%` sequence bottlenecks across `40+` plant KPIs).
+10. **[Advanced Workforce Intelligence Platform](https://github.com/aravmendiratta/workforce-intelligence-platform)** — Python, Scikit-learn, SHAP, TextBlob NLP, FastAPI, Streamlit, Docker.
+11. **Predictive Maintenance Engine (NASA C-MAPSS)** — XGBoost, Scikit-learn, Power BI (`92%` RUL forecast accuracy across 21 turbofan sensor streams).
+
+---
+
+## Local Development
+
+Zero build step required. Serve the static directory with any local HTTP server:
+
 ```bash
-python -m http.server 8000
-```
-Then visit [http://localhost:8000](http://localhost:8000).
-
-### Option 2: VS Code Live Server
-Right-click `index.html` and click **"Open with Live Server"**.
-
----
-
-## 🌐 Deploy to https://aravmendiratta.github.io in 2 Minutes
-
-Because the repository is named `aravmendiratta.github.io`, GitHub automatically treats it as your primary user site and deploys it directly to your root domain (`https://aravmendiratta.github.io/`):
-
-1. Go to [GitHub.com/new](https://github.com/new) and create a **Public** repository named **`aravmendiratta.github.io`** (make sure the username and repo name match).
-2. In your terminal inside this project folder, link to your new remote and push:
-   ```bash
-   git remote add origin https://github.com/aravmendiratta/aravmendiratta.github.io.git
-   git branch -M main
-   git push -u origin main
-   ```
-3. GitHub Pages automatically detects the special repository name and publishes it. Within 60 seconds, your portfolio is live worldwide at:
-   👉 **https://aravmendiratta.github.io/**
-
----
-
-## 📂 Project Structure
-```text
-Portfolio/
-├── .nojekyll                 # Bypasses Jekyll on GitHub Pages
-├── index.html                # Semantic, SEO-optimized markup
-├── styles.css                # Glassmorphic design system, CSS variables & animations
-├── app.js                    # Dynamic project rendering, modal, CLI terminal, counters
-├── assets/
-│   ├── avatar.jpg            # Geometric neural emblem / avatar
-│   └── Arav_Mendiratta_Resume.pdf  # Downloadable PDF CV
-├── PROFILE_README.md         # Profile README for github.com/aravmendiratta
-└── README.md                 # Project documentation & setup instructions
+npx serve .
 ```
 
----
+## Contact
 
-© 2026 Arav Mendiratta • Düsseldorf / Freiburg, Germany
+- **Email:** [arav.mendiratta1@gmail.com](mailto:arav.mendiratta1@gmail.com)
+- **LinkedIn:** [linkedin.com/in/arav-mendiratta](https://www.linkedin.com/in/arav-mendiratta)
+- **GitHub:** [github.com/aravmendiratta](https://github.com/aravmendiratta)
