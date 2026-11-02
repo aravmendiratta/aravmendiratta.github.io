@@ -348,7 +348,7 @@
       <!-- ========================================================================
        EXPERIENCE & EDUCATION (2-Column Studio Notebook Layout)
        ======================================================================== -->
-  <section class="sec wrap" id="about" aria-labelledby="about-title">
+    <section class="sec wrap" id="about" aria-labelledby="about-title">
     <p class="eyebrow" data-en="Career &amp; Background" data-de="Karriere &amp; Hintergrund">Career &amp; Background</p>
     <div class="block-head">
       <h2 id="about-title" data-en="Experience &amp; Education" data-de="Berufserfahrung &amp; Studium">Experience &amp; Education</h2>
@@ -359,52 +359,41 @@
       <!-- Left: Experience Journey Rows -->
       <div>
         <div class="journey">
+          
           <!-- Role 1: Student Researcher at CRC 1597 Small Data -->
           <div class="jr">
-            <div class="jr-time" data-en="May 2026 – Jul 2026" data-de="Mai 2026 – Jul 2026">May 2026 – Jul 2026</div>
+            <div class="jr-time" data-en="May 2026 – Present" data-de="Mai 2026 – Heute">May 2026 – Present</div>
             <div>
-              <div class="jr-role" data-en="Student Researcher" data-de="Studentischer Forscher">Student Researcher</div>
-              <div class="jr-co" data-en="Collaborative Research Center 1597 “Small Data” · University of Freiburg" data-de="SFB 1597 „Small Data“ · Universität Freiburg">Collaborative Research Center 1597 “Small Data” · University of Freiburg</div>
+              <div class="jr-role" data-en="Student Researcher" data-de="Studentische Hilfskraft">Student Researcher</div>
+              <div class="jr-co" data-en="Collaborative Research Center 1597 &quot;Small Data&quot; · University of Freiburg" data-de="SFB 1597 „Small Data“ · Universität Freiburg">Collaborative Research Center 1597 &quot;Small Data&quot; · University of Freiburg</div>
               <div class="jr-parts">
                 
-                <!-- Project 1.1: Single-Cell Genomics -->
                 <div class="jr-sub">
                   <div class="jr-sub-header">
-                    <span class="jr-badge">Bioinformatics</span>
-                    <strong data-en="Single-Cell Genomics &amp; Sandhoff Disease Research" data-de="Einzelzell-Genomik &amp; Sandhoff-Krankheit Forschung">Single-Cell Genomics &amp; Sandhoff Disease Research</strong>
+                    <span class="jr-badge">Bioinformatics &amp; LLMs</span>
+                    <strong data-en="Single-Cell LLM Representation Learning &amp; Foundation Models" data-de="Einzelzell-LLM-Repräsentationslernen &amp; Foundation Models">Single-Cell LLM Representation Learning &amp; Foundation Models</strong>
                   </div>
-                  <p class="jr-sub-desc" data-en="Engineered an LLM representation learning pipeline using Cell2Sentence and ordinal relational embeddings to classify high-dimensional single-cell genomic profiles for rare neurodegenerative disease models." data-de="Entwicklung einer LLM-Repräsentationspipeline mit Cell2Sentence und ordinalen Einbettungen zur Klassifikation hochdimensionaler Einzelzell-Genomprofile für seltene neurodegenerative Krankheiten.">Engineered an LLM representation learning pipeline using Cell2Sentence and ordinal relational embeddings to classify high-dimensional single-cell genomic profiles for rare neurodegenerative disease models.</p>
+                  <ul class="jr-points">
+                    <li data-en="Responsible for developing an end-to-end, LLM-powered pipeline that transforms high-dimensional scRNA-seq data into ordinal embeddings, successfully isolating rare class distributions where standard baseline models fail." data-de="Entwicklung einer End-to-End-Pipeline auf Basis von Large Language Models (LLMs), die hochdimensionale scRNA-seq-Daten in ordinale Embeddings transformiert und seltene Zellpopulationen identifiziert, bei denen herkömmliche Baseline-Modelle scheitern.">Responsible for developing an end-to-end, LLM-powered pipeline that transforms high-dimensional scRNA-seq data into ordinal embeddings, successfully isolating rare class distributions where standard baseline models fail.</li>
+                    <li data-en="Engineered a Python pipeline to format gene count matrices as &quot;cell sentences&quot; (Cell2Sentence) and batch-feed an LLM API, mapping complex cell relationships by leveraging the model's pre-trained biological knowledge." data-de="Implementierung einer Python-Pipeline zur Umwandlung von Genexpressionsmatrizen in „Cell Sentences“ (Cell2Sentence) und zur Batch-Verarbeitung über eine LLM-API, um komplexe Zellbeziehungen mithilfe des biologischen Vorwissens des Modells abzubilden.">Engineered a Python pipeline to format gene count matrices as &quot;cell sentences&quot; (Cell2Sentence) and batch-feed an LLM API, mapping complex cell relationships by leveraging the model's pre-trained biological knowledge.</li>
+                    <li data-en="Designed an interactive prompt-prototyping framework to systematically evaluate and refine few-shot prompt templates, optimizing the LLM's biological reasoning before large-scale batch deployment." data-de="Entwicklung eines interaktiven Frameworks zur Prototypisierung und Evaluation von Few-Shot-Prompts, um die biologische Argumentationsfähigkeit des LLMs vor dem produktiven Batch-Einsatz zu optimieren.">Designed an interactive prompt-prototyping framework to systematically evaluate and refine few-shot prompt templates, optimizing the LLM's biological reasoning before large-scale batch deployment.</li>
+                    <li data-en="Established modern MLOps and CI/CD workflows using GitHub Actions, ensuring strict type safety and reproducible analysis environments across Freiburg's SLURM HPC cluster." data-de="Etablierung moderner MLOps- und CI/CD-Workflows mit GitHub Actions zur Gewährleistung von Typsicherheit sowie reproduzierbaren Analyseumgebungen auf dem Freiburger SLURM-HPC-Cluster.">Established modern MLOps and CI/CD workflows using GitHub Actions, ensuring strict type safety and reproducible analysis environments across Freiburg's SLURM HPC cluster.</li>
+                  </ul>
                   <div class="jr-tags">
                     <span class="tech-pill">Python</span>
-                    <span class="tech-pill">PyTorch</span>
-                    <span class="tech-pill">HuggingFace</span>
-                    <span class="tech-pill">scRNA-seq</span>
+                    <span class="tech-pill">Scanpy</span>
+                    <span class="tech-pill">AnnData</span>
+                    <span class="tech-pill">vLLM</span>
+                    <span class="tech-pill">SLURM (HPC)</span>
+                    <span class="tech-pill">cblearn</span>
+                    <span class="tech-pill">Pandas</span>
+                    <span class="tech-pill">Pytest</span>
                     <span class="tech-pill">LLMOps</span>
-                    <span class="tech-pill">Guardrails</span>
+                    <span class="tech-pill">GitHub Actions</span>
                   </div>
                   <div class="jr-metric">
                     <span class="metric-label" data-en="Key Outcome:" data-de="Ergebnis:">Key Outcome:</span>
-                    <span data-en="+35% classification accuracy on rare diseased cell states in Sandhoff disease models." data-de="+35 % Klassifikationsgenauigkeit für seltene Zellzustände bei Sandhoff-Krankheit.">+35% classification accuracy on rare diseased cell states in Sandhoff disease models.</span>
-                  </div>
-                </div>
-
-                <!-- Project 1.2: HPC Pipelines -->
-                <div class="jr-sub">
-                  <div class="jr-sub-header">
-                    <span class="jr-badge">HPC &amp; ML</span>
-                    <strong data-en="Automated HPC Workflows &amp; Scalable Pipelines" data-de="Automatisierte HPC-Workflows &amp; Skalierbare Pipelines">Automated HPC Workflows &amp; Scalable Pipelines</strong>
-                  </div>
-                  <p class="jr-sub-desc" data-en="Architected automated CI/CD workflows and distributed SLURM batch execution on Freiburg's high-performance computing cluster for scalable biological data processing." data-de="Architektur automatisierter CI/CD-Workflows und verteilter SLURM-Batch-Jobs auf dem Freiburger HPC-Cluster für skalierbare biologische Datenverarbeitung.">Architected automated CI/CD workflows and distributed SLURM batch execution on Freiburg's high-performance computing cluster for scalable biological data processing.</p>
-                  <div class="jr-tags">
-                    <span class="tech-pill">SLURM HPC</span>
-                    <span class="tech-pill">Linux / Bash</span>
-                    <span class="tech-pill">Docker</span>
-                    <span class="tech-pill">CI/CD</span>
-                    <span class="tech-pill">Distributed Training</span>
-                  </div>
-                  <div class="jr-metric">
-                    <span class="metric-label" data-en="Key Outcome:" data-de="Ergebnis:">Key Outcome:</span>
-                    <span data-en="Processed 10,000+ gene expression matrices with automated validation and zero pipeline downtime." data-de="Verarbeitung von über 10.000 Genexpressionsmatrizen mit automatischer Validierung ohne Ausfallzeiten.">Processed 10,000+ gene expression matrices with automated validation and zero pipeline downtime.</span>
+                    <span data-en="Successfully isolated rare diseased cell populations in Sandhoff disease models where PCA/UMAP baselines fail, achieving peak ASW 0.748." data-de="Erfolgreiche Isolierung seltener krankhafter Zellpopulationen bei Sandhoff-Krankheit, wo PCA/UMAP-Baselines scheitern (Spitzen-ASW 0,748).">Successfully isolated rare diseased cell populations in Sandhoff disease models where PCA/UMAP baselines fail, achieving peak ASW 0.748.</span>
                   </div>
                 </div>
 
@@ -416,69 +405,119 @@
           <div class="jr">
             <div class="jr-time" data-en="Jun 2025 – Dec 2025" data-de="Jun 2025 – Dez 2025">Jun 2025 – Dec 2025</div>
             <div>
-              <div class="jr-role" data-en="Data Scientist Intern" data-de="Data Scientist Praktikant">Data Scientist Intern</div>
+              <div class="jr-role" data-en="Data Scientist (Werkstudent / Intern)" data-de="Data Scientist (Werkstudent / Praktikant)">Data Scientist (Werkstudent / Intern)</div>
               <div class="jr-co" data-en="Capgemini Germany · Stuttgart &amp; Düsseldorf" data-de="Capgemini Deutschland · Stuttgart &amp; Düsseldorf">Capgemini Germany · Stuttgart &amp; Düsseldorf</div>
               <div class="jr-parts">
                 
-                <!-- Project 2.1: AUDI GenAI -->
+                <!-- Sub 2.1: AUDI GenAI Tool -->
                 <div class="jr-sub">
                   <div class="jr-sub-header">
-                    <span class="jr-badge">GenAI</span>
-                    <strong data-en="AUDI — Enterprise GenAI Visual Prototyping Platform" data-de="AUDI — Generative-KI-Plattform für visuelles Prototyping">AUDI — Enterprise GenAI Visual Prototyping Platform</strong>
+                    <span class="jr-badge">GenAI &amp; Engineering</span>
+                    <strong data-en="AUDI: Generative AI Visual Prototyping Platform" data-de="AUDI: Generative-KI-Plattform für visuelles Prototyping">AUDI: Generative AI Visual Prototyping Platform</strong>
                   </div>
-                  <p class="jr-sub-desc" data-en="Co-developed a cloud-native GenAI platform with AUDI automotive designers, implementing custom LoRA adapters to preserve vehicle styling and accelerate concept generation." data-de="Co-Entwicklung einer Cloud-GenAI-Plattform mit AUDI-Designern; Implementierung von LoRA-Adaptern zur Wahrung des Fahrzeugdesigns und Beschleunigung der Konzeptphase.">Co-developed a cloud-native GenAI platform with AUDI automotive designers, implementing custom LoRA adapters to preserve vehicle styling and accelerate concept generation.</p>
+                  <ul class="jr-points">
+                    <li data-en="Part of an engineering team building a production Generative AI image creation platform for AUDI's internal automotive design team to generate visual prototypes." data-de="Teil des Entwicklungsteams beim Aufbau einer produktiven Generative-AI-Bildgenerierungsplattform für das interne AUDI-Designteam zur Erstellung visueller Konzeptprototypen.">Part of an engineering team building a production Generative AI image creation platform for AUDI's internal automotive design team to generate visual prototypes.</li>
+                    <li data-en="Designed generative AI image workflows leveraging AWS CDK and Docker for 40%+ efficiency gains in the manual design and mockup phase." data-de="Entwicklung von generativen KI-Bild-Workflows mit AWS CDK und Docker zur Effizienzsteigerung von über 40 % in der manuellen Design- und Mockup-Phase.">Designed generative AI image workflows leveraging AWS CDK and Docker for 40%+ efficiency gains in the manual design and mockup phase.</li>
+                    <li data-en="Built reliable FastAPI backends for production AI inference, ensuring 95%+ test coverage with Pytest." data-de="Aufbau zuverlässiger FastAPI-Backends für produktive KI-Inferenz, Gewährleistung einer Testabdeckung von über 95 % mit Pytest.">Built reliable FastAPI backends for production AI inference, ensuring 95%+ test coverage with Pytest.</li>
+                    <li data-en="Audited and deployed CI/CD pipelines via GitHub Actions to continuously deliver containerized FastAPI services to AWS cloud environments." data-de="Überprüfung von CI/CD-Pipelines über GitHub Actions zur kontinuierlichen Bereitstellung von dockerisierten FastAPI-Diensten in AWS-Cloud-Umgebungen.">Audited and deployed CI/CD pipelines via GitHub Actions to continuously deliver containerized FastAPI services to AWS cloud environments.</li>
+                  </ul>
                   <div class="jr-tags">
                     <span class="tech-pill">AWS CDK</span>
                     <span class="tech-pill">Docker</span>
                     <span class="tech-pill">FastAPI</span>
+                    <span class="tech-pill">Pytest</span>
+                    <span class="tech-pill">GitHub Actions</span>
+                    <span class="tech-pill">TypeScript</span>
                     <span class="tech-pill">Python</span>
                     <span class="tech-pill">LoRA</span>
-                    <span class="tech-pill">PyTorch</span>
                   </div>
                   <div class="jr-metric">
                     <span class="metric-label" data-en="Key Outcome:" data-de="Ergebnis:">Key Outcome:</span>
-                    <span data-en="Reduced prototyping cycles by weeks (+40% workflow efficiency) with 95%+ test coverage." data-de="Verkürzung der Prototyping-Zyklen um Wochen (+40 % Effizienz) bei über 95 % Testabdeckung.">Reduced prototyping cycles by weeks (+40% workflow efficiency) with 95%+ test coverage.</span>
+                    <span data-en="Accelerated vehicle styling iterations by 40%+ while maintaining 95%+ automated test coverage across production AI services." data-de="Beschleunigung der Design-Iterationen um über 40 % bei mehr als 95 % automatisierter Testabdeckung in der Produktionsumgebung.">Accelerated vehicle styling iterations by 40%+ while maintaining 95%+ automated test coverage across production AI services.</span>
                   </div>
                 </div>
 
-                <!-- Project 2.2: Business Transformation -->
+                <!-- Sub 2.2: Internal I&D Portfolio Development -->
                 <div class="jr-sub">
                   <div class="jr-sub-header">
-                    <span class="jr-badge">Transformation</span>
-                    <strong data-en="Insights &amp; Data — Business Transformation &amp; AI Proposals" data-de="Insights &amp; Data — Business Transformation &amp; KI-Angebote">Insights &amp; Data — Business Transformation &amp; AI Proposals</strong>
+                    <span class="jr-badge">Consulting &amp; Transformation</span>
+                    <strong data-en="Insights &amp; Data: Enterprise Portfolio Development &amp; Proposals" data-de="Insights &amp; Data: Interne Portfolioentwicklung &amp; Business Proposals">Insights &amp; Data: Enterprise Portfolio Development &amp; Proposals</strong>
                   </div>
-                  <p class="jr-sub-desc" data-en="Consulted within the Insights &amp; Data practice to analyze enterprise requirements, translating complex GenAI capabilities and data governance frameworks into strategic C-level proposals." data-de="Beratung im Insights &amp; Data Team zur Analyse von Kundenanforderungen; Übersetzung komplexer GenAI-Lösungen und Data-Governance-Konzepte in strategische C-Level-Entscheidungsvorlagen.">Consulted within the Insights &amp; Data practice to analyze enterprise requirements, translating complex GenAI capabilities and data governance frameworks into strategic C-level proposals.</p>
+                  <ul class="jr-points">
+                    <li data-en="Collaborated directly with the Innovation &amp; Development (I&amp;D) team to curate and structure Capgemini's internal technical portfolio for high-stakes client-facing proposals." data-de="Zusammenarbeit mit dem Innovation &amp; Development (I&amp;D) Team zur Kuratierung und Strukturierung des internen Portfolios von Capgemini für kundenorientierte Angebote.">Collaborated directly with the Innovation &amp; Development (I&amp;D) team to curate and structure Capgemini's internal technical portfolio for high-stakes client-facing proposals.</li>
+                    <li data-en="Performed portfolio benchmarking using Python and Power Query to support go-to-market (GTM) positioning for enterprise Life Sciences and Telecommunications clients." data-de="Durchführung von Portfolio-Benchmarking mittels Python und Power Query zur Unterstützung der GTM-Positionierung für Kunden aus den Bereichen Life Sciences und Telekommunikation.">Performed portfolio benchmarking using Python and Power Query to support go-to-market (GTM) positioning for enterprise Life Sciences and Telecommunications clients.</li>
+                    <li data-en="Translated technical offerings (Data, AI, AIOps, Data Governance) into clear, actionable business value propositions for executive decision-makers." data-de="Übersetzung technischer Angebote (Data, AI, AIOps, Data Governance) in klare geschäftliche Mehrwerte für C-Level-Entscheidungsträger.">Translated technical offerings (Data, AI, AIOps, Data Governance) into clear, actionable business value propositions for executive decision-makers.</li>
+                  </ul>
                   <div class="jr-tags">
-                    <span class="tech-pill">GenAI Strategy</span>
-                    <span class="tech-pill">Data Governance</span>
+                    <span class="tech-pill">Portfolio &amp; Market Analysis</span>
                     <span class="tech-pill">Python</span>
                     <span class="tech-pill">Power Query</span>
-                    <span class="tech-pill">Proposal Architecture</span>
+                    <span class="tech-pill">Advanced Excel</span>
+                    <span class="tech-pill">GenAI Strategy</span>
+                    <span class="tech-pill">Data Governance</span>
                   </div>
                   <div class="jr-metric">
                     <span class="metric-label" data-en="Key Outcome:" data-de="Ergebnis:">Key Outcome:</span>
-                    <span data-en="Achieved 25% faster go-to-market turnaround on multi-million Euro proposals across 15+ offerings." data-de="25 % schnellere Angebotserstellung für Multi-Millionen-Euro-Projekte über 15+ Leistungsbereiche.">Achieved 25% faster go-to-market turnaround on multi-million Euro proposals across 15+ offerings.</span>
+                    <span data-en="Enabled structured go-to-market proposals across 15+ service offerings, translating deep technical capabilities into quantifiable business ROI." data-de="Strukturierte Angebotserstellung über 15+ Servicebereiche mit klarer Übersetzung technischer Fähigkeiten in messbaren Business-ROI.">Enabled structured go-to-market proposals across 15+ service offerings, translating deep technical capabilities into quantifiable business ROI.</span>
                   </div>
                 </div>
 
               </div>
             </div>
           </div>
+
+          <!-- Role 3: Data Analyst Intern at Encriss Technologies -->
+          <div class="jr">
+            <div class="jr-time" data-en="Jul 2022 – Aug 2022" data-de="Jul 2022 – Aug 2022">Jul 2022 – Aug 2022</div>
+            <div>
+              <div class="jr-role" data-en="Data Analyst (Internship)" data-de="Data Analyst (Praktikum)">Data Analyst (Internship)</div>
+              <div class="jr-co" data-en="Encriss Technologies · Delhi, India" data-de="Encriss Technologies · Neu-Delhi, Indien">Encriss Technologies · Delhi, India</div>
+              <div class="jr-parts">
+                
+                <div class="jr-sub">
+                  <div class="jr-sub-header">
+                    <span class="jr-badge">Analytics &amp; ML</span>
+                    <strong data-en="Predictive Modeling &amp; Clinical Trial Data Intelligence" data-de="Prädiktive Modellierung &amp; Klinische Studien-Intelligenz">Predictive Modeling &amp; Clinical Trial Data Intelligence</strong>
+                  </div>
+                  <ul class="jr-points">
+                    <li data-en="Trained and validated Scikit-learn machine learning models on 500K+ records to forecast operational client KPIs and systematically isolate bottlenecks." data-de="Entwickelte und trainierte Scikit-learn-Modelle auf über 500.000 Datensätzen zur Prognose von Kunden-KPIs sowie zur Identifikation operativer Engpässe.">Trained and validated Scikit-learn machine learning models on 500K+ records to forecast operational client KPIs and systematically isolate bottlenecks.</li>
+                    <li data-en="Automated 15+ hours of weekly executive reporting by developing and deploying interactive Streamlit data applications." data-de="Reduzierte den manuellen Reporting-Aufwand um mehr als 15 Stunden pro Woche durch die Entwicklung interaktiver Streamlit-Dashboards für das Management.">Automated 15+ hours of weekly executive reporting by developing and deploying interactive Streamlit data applications.</li>
+                    <li data-en="Clustered high-dimensional clinical trial datasets using Python, helping biomedical clients segment patient populations based on identified biological markers." data-de="Analysierte und clusterte Datensätze aus klinischen Studien mit Python, um biomedizinische Kunden bei der Segmentierung von Patientenkohorten anhand biologischer Marker zu unterstützen.">Clustered high-dimensional clinical trial datasets using Python, helping biomedical clients segment patient populations based on identified biological markers.</li>
+                  </ul>
+                  <div class="jr-tags">
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">Scikit-learn</span>
+                    <span class="tech-pill">Pandas</span>
+                    <span class="tech-pill">Streamlit</span>
+                    <span class="tech-pill">NumPy</span>
+                    <span class="tech-pill">Excel</span>
+                    <span class="tech-pill">SQL</span>
+                  </div>
+                  <div class="jr-metric">
+                    <span class="metric-label" data-en="Key Outcome:" data-de="Ergebnis:">Key Outcome:</span>
+                    <span data-en="Eliminated 15+ hours/week of manual executive reporting and successfully segmented patient cohorts across 500K+ records." data-de="Einsparung von 15+ Stunden/Woche manueller Reporting-Arbeit und Segmentierung von Patientenkohorten über 500.000 Datensätze.">Eliminated 15+ hours/week of manual executive reporting and successfully segmented patient cohorts across 500K+ records.</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
       <!-- Right: Education & Languages Stack -->
       <div class="edu-stack">
         <div class="edu-card">
-          <div class="yr" data-en="Oct 2024 – Expected Apr 2027 · Freiburg, Germany" data-de="Okt 2024 – Vorauss. Apr 2027 · Freiburg, Deutschland">Oct 2024 – Expected Apr 2027 · Freiburg, Germany</div>
+          <div class="yr" data-en="Oct 2024 · Expected 2027 · Freiburg, Germany" data-de="Okt 2024 · Vorauss. 2027 · Freiburg, Deutschland">Oct 2024 · Expected 2027 · Freiburg, Germany</div>
           <h3 data-en="M.Sc. in Computer Science" data-de="M.Sc. in Informatik">M.Sc. in Computer Science</h3>
-          <p data-en="Albert-Ludwigs-Universität Freiburg — Focus on Artificial Intelligence, Bioinformatics, Deep Learning &amp; Data Systems." data-de="Albert-Ludwigs-Universität Freiburg — Schwerpunkt auf Künstlicher Intelligenz, Bioinformatik, Deep Learning &amp; Datensystemen.">Albert-Ludwigs-Universität Freiburg — Focus on Artificial Intelligence, Bioinformatics, Deep Learning &amp; Data Systems.</p>
+          <p data-en="Albert-Ludwigs-Universität Freiburg · Focus on Artificial Intelligence, Bioinformatics, Deep Learning &amp; Distributed Systems." data-de="Albert-Ludwigs-Universität Freiburg · Schwerpunkt auf Künstlicher Intelligenz, Bioinformatik, Deep Learning &amp; Verteilten Systemen.">Albert-Ludwigs-Universität Freiburg · Focus on Artificial Intelligence, Bioinformatics, Deep Learning &amp; Distributed Systems.</p>
         </div>
 
         <div class="edu-card">
-          <div class="yr" data-en="Sep 2020 – Jun 2024 · Chennai, India" data-de="Sep 2020 – Jun 2024 · Chennai, Indien">Sep 2020 – Jun 2024 · Chennai, India</div>
+          <div class="yr" data-en="Sep 2020 · Jun 2024 · Chennai, India" data-de="Sep 2020 · Jun 2024 · Chennai, Indien">Sep 2020 · Jun 2024 · Chennai, India</div>
           <h3 data-en="B.Tech. in Computer Science &amp; Engineering" data-de="B.Tech. in Informatik &amp; Ingenieurwesen">B.Tech. in Computer Science &amp; Engineering</h3>
-          <p data-en="SRM Institute of Science &amp; Technology — Focus on Machine Learning, Data Analytics &amp; Software Engineering." data-de="SRM Institute of Science &amp; Technology — Schwerpunkt auf Machine Learning, Datenanalyse &amp; Software Engineering.">SRM Institute of Science &amp; Technology — Focus on Machine Learning, Data Analytics &amp; Software Engineering.</p>
+          <p data-en="SRM Institute of Science &amp; Technology · Focus on Machine Learning, Data Analytics &amp; Software Engineering." data-de="SRM Institute of Science &amp; Technology · Schwerpunkt auf Machine Learning, Datenanalyse &amp; Software Engineering.">SRM Institute of Science &amp; Technology · Focus on Machine Learning, Data Analytics &amp; Software Engineering.</p>
         </div>
 
         <div class="edu-card">
