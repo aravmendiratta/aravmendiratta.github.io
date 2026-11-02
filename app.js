@@ -414,6 +414,7 @@
   ];
 
   function updateNavHighlight() {
+    document.body.classList.toggle("scrolled", window.scrollY > 30);
     var y = window.scrollY + 180;
     var current = 'top';
     sections.forEach(function (s) {
